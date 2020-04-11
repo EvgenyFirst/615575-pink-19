@@ -277,6 +277,64 @@
   </section>
   <!-- Фотографии пользователей (конец) -->
 
+  <!-- Запостить фото (начало) -->
+  <section class="add-photo">
+    <h1 class="visually-hidden">Запостить фото</h1>
+    <form class="add-photo__form" action="https://echo.htmlacademy.ru">
+      <!-- Загружаемое фото -->
+      <span class="add-photo__img" id="pic"></span>
+      <!-- Загружаемое фото -->
+      <!-- - -->
+      <!-- Управление загрузкой фото -->
+      <fieldset class="add-photo__nav">
+        <ul class=add-photo__options-img>
+          <li class="add-photo__option-img">
+            <input tabindex="0" class="add-photo__crop" type="radio" id="crop" name="Управление загрузкой фото"
+              value="Кадрирование" checked>
+            <label for="crop"><img src="https://via.placeholder.com/150x150" width="50" height="33" alt="Кадрирование"></label>
+          </li>
+          <li class="add-photo__option-img">
+            <input tabindex="0" class="add-photo__paint" type="radio" id="paint" name="Управление загрузкой фото"
+              value="Заливка">
+            <label for="paint"><img src="https://via.placeholder.com/150x150" width="50" height="33" alt="Заливка">></label>
+          </li>
+          <li class="add-photo__option-img">
+            <input tabindex="0" class="add-photo__change-color" type="radio" id="change-color"
+              name="Управление загрузкой фото" value="Изменение цвета">
+            <label for="change-color"><img src="https://via.placeholder.com/150x150" width="50" height="33" alt="Изменение цвета"></label>
+          </li>
+        </ul>
+        <!--
+          <script>
+          function sizePic() {
+            size = document.getElementById("size").value;
+            img = document.getElementById("pic");
+            img.width = 60 + 20*size;
+          }
+          </script>
+        -->
+        <input class="add-photo__range" type="range" min="1" max="5" id="size" value="3" name="Ползунок">
+        <!-- <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="3"> -->
+      </fieldset>
+      <button type="submit" class="add-photo__send-form">Запостить</button>
+      <button type="reset" class="add-photo__cancel-form">Отмена</button>
+      <!-- Управление загрузкой фото -->
+    </form>
+  </section>
+
+  <!-- Запостить фото (конец) -->
+
+  <!-- Затмите из всех (начало) -->
+  <section class="diamond">
+    <h1 class="visually-hidden">Затмите из всех</h1>
+    <p class="diamond__tezt">
+      Затмите их всех!
+      Выкладывайте все,
+      что накопилось в телефоне!
+    </p>
+  </section>
+  <!-- Затмите из всех (конец) -->
+
   <!-- Подвал (начало) -->
   <footer class="footer-pink">
     <p class="visually-hidden">Подвал сайта Пинк</p>

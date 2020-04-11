@@ -54,25 +54,140 @@
   </section>
   <!-- Конкурс на самое безбашенное путешествие с Пинк (конец) -->
 
+  <!-- Поделиться историей (начало) -->
+  <section class="share-history">
+    <p class="visually-hidden">Поделиться историей</p>
+    <h1 class="share-history__header">
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
+      заполните форму ниже:
+    </h1>
+    <form class="share-history__form" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="share-history__user-data">
+        <ul class="share-history__info">
+          <li class="share-history__option-text">
+            <label tabindex="0" class="share-history__surname-header" for="surname-info">Фамилия:</label>
+            <input class="visually-hidden share-history__info-input" type="text" name="Фамилия"
+              placeholder="Укажите фамилию *" id="surname-info" required>
+          </li>
+          <li class="share-history__option-text">
+            <label tabindex="0" class="share-history_name-header" for="name-info">Имя:</label>
+            <input class="visually-hidden share-history_info-input" type="text" name="Имя"
+              placeholder="Введите ваше имя *" id="name-info" required>
+          </li>
+          <li class="share-history__option-text">
+            <label tabindex="0" class="share-history__patronymic-header" for="patronymic-info">Отчество:</label>
+            <input class="visually-hidden share-history_info-input" type="text" name="Отчество"
+              placeholder="Ну и отчество тоже" id="patronymic-info">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="share-history__crazy-achievements-in-travel">
+        <legend class="share-history__header">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="share-history__crazy-achievement">
+          <li class="share-history__option-crazy-achievement">
+            <input class="visually-hidden" type="checkbox" name="Ваши безбашенные достижения в путешествии"
+              value="Сделал селфи с акулой" id="crazy-selfie" checked>
+            <label tabindex="0" class="share-history__crazy-selfie" for="crazy-selfie">Сделал селфи с акулой</label>
+          </li>
+          <li class="share-history__option-crazy-achievement">
+            <input class="visually-hidden share-history__option-crazy-input" type="checkbox"
+              name="Ваши безбашенные достижения в путешествии" value="Обгорел на пляже" id="fire-beach" checked>
+            <label tabindex="0" class="share-history__fire-beach-header" for="fire-beach">Обгорел на пляже</label>
+          </li>
+          <li class="share-history__option-crazy-achievement">
+            <input class="visually-hidden share-history__option-crazy-input" type="checkbox"
+              name="Ваши безбашенные достижения в путешествии" value="Видел Чака Норриса" id="saw-chuck">
+            <label tabindex="0" class="share-history__saw-chuck" for="saw-chuck">Видел Чака Норриса</label>
+          </li>
+          <li class="share-history__option-crazy-achievement">
+            <input class="visually-hidden share-history__option-crazy-input" type="checkbox"
+              name="Ваши безбашенные достижения в путешествииe" value="Накупил сувениров" id="bought-souvenirs">
+            <label tabindex="0" class="share-history__bought-souvenirs" for="bought-souvenirs">Накупил сувениров</label>
+          </li>
+          <li class="share-history__option-crazy-achievement">
+            <input class="visually-hidden share-history__option-crazy-input" type="checkbox"
+              name="Ваши безбашенные достижения в путешествии" value="Удержал башню" id="tower" checked>
+            <label tabindex="0" class="share-history__held-the-tower" for="tower">Удержал башню</label>
+          </li>
+          <li class="share-history__option-crazy-achievement">
+            <input class="visually-hidden share-history__option-crazy-input" type="checkbox"
+              name="Ваши безбашенные достижения в путешествии" value="Разгромил отель" id="defeated-the-hotel">
+            <label tabindex="0" class="share-history__defeated-the-hotel" for="defeated-the-hotel">Разгромил
+              отель</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="share-history__contact-data">
+        <ul class="share-history__contacts">
+          <li class="share-history__option-contacts">
+            <label tabindex="0" class="share-history__phone-number" for="number">Номер телефона</label>
+            <input class="visually-hidden share-history__phone-number-input" type="text" name="Номер телефона"
+              placeholder="Номер, пожалуйста" id="number" required>
+          </li>
+          <li class="share-history__option-contacts">
+            <label tabindex="0" class="share-history__e-mail" for="email">Адрес почты</label>
+            <input class="visually-hidden share-history__e-mail-input" type="email" name="Адрес почты"
+              placeholder="Введите почту *" id="email" required>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="share-history__adventure">
+        <legend class="share-history__adventure-header">С каким приложением путешествовали?</legend>
+        <ul class=share-history__adventure-info>
+          <li class="share-history__option-adventure">
+            <input tabindex="0" class="share-history__pink-ios" type="radio" id="pink-ios"
+              name="С каким приложением путешествовали?" value="Pink для iOS" checked>
+            <label for="pink-ios">Pink для iOS</label>
+          </li>
+          <li class="share-history__option-adventure">
+            <input tabindex="0" class="share-history__pink-android" type="radio" id="pink-android"
+              name="С каким приложением путешествовали?" value="Pink на Android">
+            <label for="pink-android">Pink на Android</label>
+          </li>
+          <li class="share-history__option-adventure">
+            <input tabindex="0" class="share-history__pink-windows-phone" type="radio" id="pink-windows-phone"
+              name="С каким приложением путешествовали?" value="Windows Phone">
+            <label for="pink-windows-phone">Windows Phone</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="share-history__description">
+        <ul class="share-history__description-info">
+          <li class="share-history__option-description">
+            <label tabindex="0" class="share-history__description-emotion" for="description-emotion">Опишите свои
+              эмоции</label>
+            <input class="visually-hidden share-history__description-emotion-input" type="text"
+              name="Опишите свои эмоции" placeholder="Можно прям в красках, не стесняясь в выражениях"
+              id="description-emotion">
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit" class="share-history__send-form">Отправить
+        форму</button>
+    </form>
+    <p class="share-history__required">
+      <span class="share-history__required-span">*</span> — обязательные поля
+    </p>
+  </section>
+  <!-- Поделиться историей (конец) -->
+
   <!-- Подвал (начало) -->
   <footer class="footer-pink">
     <p class="visually-hidden">Подвал сайта Пинк</p>
     <ul class="footer-pink__blocks">
       <li class="footer-pink___logo-link">
-        <a href="index.html" class="logo-link-img">Logo Pink</a>
+        <a href="index.html" class="footer-pink__logo-link-img">Logo Pink</a>
       </li>
       <li class="footer-pink___social-links">
         <a href="https://twitter.com/htmlacademy_ru" class="footer-pink__tw">Мы в Инстаграм</a>
         <a href="https://www.facebook.com/htmlacademy" class="footer-pink__fb">Мы в Фейсбуке</a>
         <a href="https://www.youtube.com/user/htmlacademyru" class="footer-pink__youtube">Мы на Ютубе</a>
       </li>
-      <li class="footer-pink___copyright">
-        <div class="copyright">
-          <p class="copyright__developed-by">
-            Разработано
-          </p>
-          <a href="https://htmlacademy.ru/" class="copyright__img">HTML Academy</a>
-        </div>
+      <li class="footer-pink_____copyright">
+        <p class="footer-pink____developed-by">
+          Разработано
+        </p>
+        <a href="https://htmlacademy.ru/" class="footer-pink__copyright-img">HTML Academy</a>
       </li>
     </ul>
   </footer>
