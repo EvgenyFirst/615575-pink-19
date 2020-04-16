@@ -45,7 +45,11 @@
 }
 
 .values-pink-app__info {
+  font-size: 34px;
   text-align: center;
+  font-weight: 400;
+  line-height: 1.333;
+  color: $one-dark-blue-color;
 }
 
 .values-pink-app_header {
@@ -56,14 +60,6 @@
   color: $black-color;
 }
 
-.values-pink-app__info {
-  font-size: 34px;
-  text-align: center;
-  font-weight: 400;
-  line-height: 1.333;
-  color: $one-dark-blue-color;
-}
-
 .values-pink-app__info__add {
   margin-bottom: 78px;
 }
@@ -72,9 +68,8 @@
   display: block;
   width: 250px;
   min-height: 677px;
-  background: url(../img/iphone-screen-mobile@1x.png) no-repeat;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
   background-size: cover;
-
   margin-left: 292px;
   padding-left: 62px;
   padding-right: 62px;
