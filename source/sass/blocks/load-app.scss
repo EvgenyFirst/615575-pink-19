@@ -1,0 +1,84 @@
+// load-app
+
+.load-app {
+  min-height: 271px;
+  background-color: $two-dark-blue-color;
+
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 138px;
+
+  text-align: center;
+
+  border: 2px solid $special-border-red-color;
+}
+
+.load-app__download-link {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1;
+  color: $white-color;
+
+  border: 3px solid $white-color;
+  border-radius: 70px;
+
+  padding-top: 34px;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-bottom: 40px;
+}
+
+.load-app__links {
+  display: flex;
+  justify-content: center;
+  margin-left: -20px;
+  padding-top: 138px;
+  padding-left: 0;
+}
+
+.load-app__platform-apple {
+  display: block;
+  width: 120px;
+  height: 145px;
+  background: url("../img/logo-apple.svg") no-repeat;
+  background-size: cover;
+  position: relative;
+  right: 91px;
+}
+
+.load-app__platform-android {
+  display: block;
+  width: 130px;
+  height: 145px;
+  background: url("../img/logo-android.svg") no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 27px;
+}
+
+.load-app__platform-windows {
+  display: block;
+  width: 150px;
+  height: 145px;
+  background: url("../img/logo-microsoft.svg") no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 140px;
+}
+
+.load-app__availability {
+  padding-top: 100px;
+  padding-left: 8px;
+  padding-right: 5px;
+  padding-bottom: 100px;
+}
+
+.load-app__text {
+  font-size: 14px;
+  color: $white-color;
+  line-height: 1.714;
+  font-weight: normal;
+}
+
+// load-app

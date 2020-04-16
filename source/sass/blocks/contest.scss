@@ -1,0 +1,28 @@
+// contest
+
+.contest {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-size: contain;
+
+  position: relative;
+  z-index: -1;
+
+  min-height: 1415px;
+  margin-top: -203px;
+
+  margin-left: -20px;
+  margin-right: -20px;
+
+  border: 2px solid $special-border-lite-green-color;
+}
+
+.contest__header {
+  padding-top: 257px;
+  text-align: center;
+  font-size: 48px;
+  line-height: normal;
+  color: $white-color;
+  font-weight: 400;
+}
+
+// contest
