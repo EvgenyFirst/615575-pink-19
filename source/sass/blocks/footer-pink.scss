@@ -1,0 +1,83 @@
+// footer-pink
+
+.footer-pink {
+  min-height: 276px;
+
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 40px;
+  padding-left: 51px;
+  padding-right: 52px;
+  padding-bottom: 36px;
+
+  border: 2px solid $special-border-red-color;
+}
+
+.footer-pink__blocks {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-pink__logo-link-img {
+  display: block;
+  width: 220px;
+  min-height: 70px;
+  background: url("../img/logo-pink-blue-mobile.svg") no-repeat;
+  background-size: contain;
+  //margin-top: 40px;
+}
+
+.footer-pink___link {
+  text-decoration: none;
+
+  svg {
+    width: 37.5px;
+    height: 35.5px;
+    position: relative;
+    top: 10px;
+    left: 2px;
+  }
+}
+
+.footer-pink__tw,
+.footer-pink__fb {
+  margin-right: 12px;
+}
+
+.footer-pink___link-radius {
+  border: 3px solid $lite-gray-color;
+  border-radius: 50%;
+
+  padding-top: 18px;
+  padding-left: 14px;
+  padding-right: 12px;
+  padding-bottom: 15px;
+}
+
+.footer-pink__copyright-img {
+  svg {
+    height: 65.5px;
+  }
+}
+
+.footer-pink___social-links {
+  margin-top: 40px;
+}
+
+.footer-pink_____copyright {
+  display: flex;
+  margin-top: 39px;
+}
+
+.footer-pink____developed-by {
+  font-size: 24px;
+  color: $one-dark-blue-color;
+  font-weight: normal;
+  line-height: 1.286;
+  padding-right: 16px;
+}
+// footer-pink

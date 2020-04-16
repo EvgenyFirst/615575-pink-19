@@ -1,0 +1,182 @@
+// users-pix
+
+.users-pix {
+  min-height: 2484px;
+  margin-top: -701px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  background-color: $white-color;
+
+  border: 2px solid $special-border-red-color;
+}
+
+.users-pix__description {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  color: $one-dark-blue-color;
+  line-height: 2.143;
+
+  padding-top: 55px;
+  padding-left: 20px; // +20px из-за padding 0 для body
+  padding-right: 39px; // +20px из-за padding 0 для body
+  padding-bottom: 56px;
+}
+
+.users-pix__content-add {
+  margin-bottom: 20px;
+}
+
+.users-pix__top-day-bg {
+  background-color: $crimson-color;
+  width: 429px;
+  position: absolute;
+  right: 20px;
+
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 21px;
+  padding-bottom: 19px;
+}
+
+.users-pix__top-day {
+  font-size: 42px;
+  color: $white-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2;
+  text-align: center;
+
+  display: block;
+  justify-content: center;
+  margin: 0;
+}
+
+.users-pix__img {
+  display: block;
+}
+
+.users-pix__img-panoramic {
+  min-height: 420px;
+  background: url("../img/panorama-mobile@1x.jpg") no-repeat;
+  background-size: contain;
+}
+
+.users-pix__img-levon {
+  min-height: 630px;
+  background: url("../img/photo-car-mobile@1x.jpg") no-repeat;
+  background-size: contain;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.users-pix__img-anton {
+  min-height: 630px;
+  background: url("../img/photo-drumset-mobile@1x.jpg") no-repeat;
+  background-size: contain;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.users-pix__img-boris {
+  min-height: 630px;
+  background: url("../img/photo-window-mobile@1x.jpg") no-repeat;
+  background-size: contain;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.users-pix__img-sergey {
+  min-height: 630px;
+  background: url("../img/photo-fair-mobile@1x.jpg") no-repeat;
+  background-size: contain;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.users-pix__img-maxim {
+  min-height: 630px;
+  background: url("../img/photo-pov-mobile@1x.jpg") no-repeat;
+  background-size: contain;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.users-pix__img-nadezhda {
+  min-height: 630px;
+  background: url("../img/photo-wing-mobile@1x.jpg") no-repeat;
+  background-size: contain;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.users-pix__info-pix {
+  background-color: $lite-white-color;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  padding-top: 25px;
+  padding-left: 18px;
+  padding-right: 13px;
+  padding-bottom: 26px;
+}
+
+.users-pix__main {
+  display: flex;
+}
+
+.users-pix__name {
+  color: $one-dark-blue-color;
+  font-size: 40px;
+  line-height: 1.714;
+  font-weight: bold;
+}
+
+.users-pix__last-time {
+  color: $one-dark-blue-color;
+  font-size: 40px;
+  line-height: 1.714;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.users-pix__message {
+  color: $one-dark-blue-color;
+  font-size: 40px;
+  line-height: 1.714;
+  font-weight: normal;
+
+  margin-top: -10px;
+}
+
+.users-pix__likes {
+  display: flex;
+
+  svg {
+    width: 37.5px;
+    height: 35.5px;
+    position: relative;
+    top: 60px;
+    left: 2px;
+
+    padding-right: 104px;
+  }
+}
+
+.users-pix__text,
+.users-pix__total {
+  color: $crimson-color;
+  font-size: 40px;
+  line-height: 1.714;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+// users-pix

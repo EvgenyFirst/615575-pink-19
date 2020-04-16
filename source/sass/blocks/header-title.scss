@@ -1,0 +1,105 @@
+// header-title
+
+.header-title {
+  background-color: $one-dark-blue-color;
+
+  margin-left: -20px;
+  margin-right: -20px;
+
+  border: 2px solid $special-border-red-color;
+
+  /*
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  list-style: none;
+  width: auto;
+  height: 196px;
+  min-width: 320px;
+  list-style: none;
+  background: url("../img/bg-page-header-mobile.png") no-repeat;
+  background-size: cover;
+// background-size: contain;
+*/
+}
+
+.header-title__top,
+.header-title__top-img {
+  min-height: 70px;
+}
+
+.header-title__top-img {
+  padding-left: 20px;
+  padding-right: 19px;
+}
+
+.header-title__menu-link-main {
+  margin: 0;
+  min-height: 64px;
+}
+
+.header-title__line-down-main {
+  width: 100vw;
+  margin-left: -29px;
+  position: relative;
+  top: 69px;
+}
+
+.header-title__link {
+  position: relative;
+  top: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.778;
+  color: $white-color;
+  padding-top: 25px;
+}
+
+.header-title__top-img-link {
+  position: absolute;
+  top: 21px;
+  width: 120px;
+  min-height: 35.5px;
+  background: url("../img/logo-pink-white-mobile.svg") no-repeat;
+  background-size: cover;
+}
+
+.header-title__top-img-x {
+  position: absolute;
+  top: 21px;
+  right: 19px;
+  width: 37.5px;
+  min-height: 35.5px;
+  background: url("../img/x-close.png") no-repeat;
+  background-size: cover;
+}
+
+.header-title__links {
+  margin-bottom: 21px;
+  padding-left: 0;
+  margin-left: -40px;
+  text-align: center;
+}
+
+.header-title__line-top {
+  display: block;
+  background: $three-dark-blue-color;
+  min-height: 1px;
+}
+
+.header-title__line-down {
+  display: block;
+  background: $black-color;
+  min-height: 1px;
+  margin-top: 12px;
+}
+
+.header-title__line-down-link {
+  position: relative;
+  top: 21px;
+}
+
+// header-title

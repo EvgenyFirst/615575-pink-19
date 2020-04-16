@@ -1,0 +1,40 @@
+// phone-in-hand
+
+.phone-in-hand {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-size: cover;
+
+  margin-left: -20px;
+  margin-right: -20px;
+
+  position: relative;
+  z-index: -1;
+
+  min-height: 1409px;
+  margin-top: -203px;
+
+  border: 2px solid $special-border-lite-green-color;
+}
+
+.phone-in-hand__header {
+  padding-top: 243px;
+  text-align: center;
+  font-size: 48px;
+  line-height: normal;
+  color: $white-color;
+  font-weight: 400;
+}
+
+.phone-in-hand__img {
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  background-size: contain;
+
+  display: block;
+  position: absolute;
+  bottom: 0;
+
+  width: 785px;
+  min-height: 875px;
+}
+
+// phone-in-hand
