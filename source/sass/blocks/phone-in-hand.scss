@@ -1,40 +1,43 @@
 // phone-in-hand
 
 .phone-in-hand {
+  min-height: 459px; // визуально padding-min-height=0, по факту min-height: 395px
+
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-size: cover;
 
+  margin-top: -62px;
   margin-left: -20px;
   margin-right: -20px;
 
   position: relative;
   z-index: -1;
 
-  min-height: 1409px;
-  margin-top: -203px;
-
-  border: 2px solid $special-border-lite-green-color;
+  border: 2px solid $special-border-lite-green-color; // временно
 }
 
 .phone-in-hand__header {
-  padding-top: 243px;
+  margin-top: 88px; // визуально margin-top=0, по факту margin-top=350px
+  margin-left: 20px;
+  margin-right: 20px;
+
+  font-size: 24px;
   text-align: center;
-  font-size: 48px;
-  line-height: normal;
-  color: $white-color;
   font-weight: 400;
+  color: $white-color;
 }
 
 .phone-in-hand__img {
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
-  background-size: contain;
+  width: 254px;
+  min-height: 281px;
+
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   display: block;
   position: absolute;
   bottom: 0;
-
-  width: 785px;
-  min-height: 875px;
 }
 
 // phone-in-hand

@@ -1,0 +1,239 @@
+// catalog
+
+.catalog {
+  background: url("../img/grey-bg-standart.png");
+  background-size: cover;
+
+  margin-top: -116px; // визуально margin-top: 0, по факту margin-top: -96px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  position: relative;
+  z-index: 3;
+
+  border: 2px solid $special-border-lite-green-color; // временно
+}
+
+.catalog__lines {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 198px; // визуально margin-top: 0, по факту margin-top: 131px;;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.catalog__lines-hr-vertical,
+.catalog__lines-hr-horizontal {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__lines-hr-vertical {
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog__lines-hr-horizontal {
+  width: 100vw;
+  min-height: 173px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.catalog__lines-hr-one {
+  margin-top: 35px; // визуально margin-top: 0, по факту margin-top: -26px
+}
+
+.catalog__lines-hr-three {
+  position: relative;
+  bottom: 100px;
+}
+
+.catalog__lines-hr-style {
+  min-height: 2px;
+
+  display: block;
+  background-color: $two-lite-grey-color;
+
+  position: relative;
+  top: 68px;
+}
+
+.catalog__lines-hr-left,
+.catalog__lines-hr-right {
+  transform: rotate(90deg);
+  position: relative;
+  top: 102px;
+  width: 281px;
+}
+
+.catalog__lines-hr-left {
+  position: relative;
+  left: -140px; // визуально left: 0, по факту left: -160px;
+}
+
+.catalog__lines-hr-right {
+  position: relative;
+  right: -138px; // визуально right: 0, по факту right: -178px;
+}
+
+.catalog__line-order {
+  min-width: 278px;
+  min-height: 181px;
+
+  margin-top: -8px;
+}
+
+.catalog__line-orders {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+  padding-left: 22px;
+  padding-right: 17px;
+
+  &:first-child {
+    min-height: 67px;
+  }
+
+  &:nth-child(2) {
+    min-height: 59px;
+    margin-top: -6px;
+  }
+
+  &:last-child {
+    min-height: 59px;
+    margin-top: 10.5px;
+  }
+}
+
+.catalog__slider-toggles {
+  margin-top: 40px;
+  margin-bottom: 47px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.catalog__line-flex {
+  width: 100%;
+
+  margin-top: -215px;
+
+  background-color: $one-dark-blue-color;
+}
+
+.catalog__line-wrap {
+  min-height: 96px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.catalog__info-center {
+  margin-right: 0;
+}
+
+.catalog__img {
+  width: 74px;
+  min-height: 73px;
+
+  position: relative;
+  top: -11px;
+  left: -17px;
+
+  background-image: url("../img/hit-ribbon.png");
+  background-repeat: no-repeat;
+}
+
+.catalog__text-top {
+  transform: rotate(-45deg);
+
+  position: absolute;
+  left: 12px;
+  bottom: 19px;
+
+  font-size: 14px;
+  line-height: 2.143;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.catalog__info {
+  margin-top: -8px; // визуально margin-top: 0, по факту margin-top: -52px;
+  margin-right: 72px; // визуально margin-right: 0, по факту margin-right: -98px;
+}
+
+.catalog__type {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 18px;
+  line-height: 1.667;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.catalog__price-tag,
+.catalog__currency {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  color: $white-color;
+}
+
+.catalog__name-price {
+  font-size: 14px;
+  line-height: 2.143;
+  text-align: center;
+  text-transform: uppercase;
+  color: $one-dark-blue-color;
+}
+
+.catalog__total-price {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.catalog__check-price-image {
+  width: 31px;
+  min-height: 21px;
+
+  background-image: url("../img/yes.png");
+  background-repeat: no-repeat;
+}
+
+.catalog__cross-price-image {
+  width: 27px;
+  min-height: 26px;
+
+  background-image: url("../img/no.png");
+  background-repeat: no-repeat;
+}
+
+// catalog

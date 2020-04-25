@@ -27,15 +27,23 @@
 @import "blocks/phone-in-hand.scss";
 @import "blocks/load-app.scss";
 @import "blocks/values-pink-app.scss";
+@import "blocks/reviews.scss";
+@import "blocks/slider.scss";
+@import "blocks/catalog.scss";
+@import "blocks/contacts.scss";
+@import "blocks/coordinates.scss";
 // index.html, подключение файлов
 
 // photo.html, подключение файлов
 @import "blocks/users-photo.scss";
 @import "blocks/users-pix.scss";
+@import "blocks/diamond.scss";
+@import "blocks/add-photo.scss";
 // photo.html, подключение файлов
 
 // form.html, подключение файлов
 @import "blocks/contest.scss";
+@import "blocks/share-history.scss";
 // form.html, подключение файлов
 
 // каждому БЭМ-блоку должен соответствовать отдельный препроцессорный файл

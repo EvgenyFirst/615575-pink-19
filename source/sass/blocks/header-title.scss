@@ -6,27 +6,14 @@
   margin-left: -20px;
   margin-right: -20px;
 
-  border: 2px solid $special-border-red-color;
-
-  /*
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
-  list-style: none;
-  width: auto;
-  height: 196px;
-  min-width: 320px;
-  list-style: none;
-  background: url("../img/bg-page-header-mobile.png") no-repeat;
-  background-size: cover;
-// background-size: contain;
-*/
+  border: 2px solid $special-border-red-color; // временно
 }
 
 .header-title__top,
 .header-title__top-img {
   min-height: 70px;
+
+  margin-top: -12px;
 }
 
 .header-title__top-img {
@@ -35,52 +22,62 @@
 }
 
 .header-title__menu-link-main {
-  margin: 0;
   min-height: 64px;
+
+  margin: 0;
 }
 
 .header-title__line-down-main {
   width: 100vw;
+
   margin-left: -29px;
+
   position: relative;
-  top: 69px;
+  top: 68px;
 }
 
 .header-title__link {
-  position: relative;
-  top: 17px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
   line-height: 1.778;
   color: $white-color;
-  padding-top: 25px;
+
+  position: relative;
+  top: 16px;  // визуально top: 0, по факту top: -6px;
 }
 
 .header-title__top-img-link {
+  width: 75px;
+  min-height: 22px;
+
   position: absolute;
   top: 21px;
-  width: 120px;
-  min-height: 35.5px;
-  background: url("../img/logo-pink-white-mobile.svg") no-repeat;
+
+  background-image: url("../img/logo-pink-white-mobile.svg");
   background-size: cover;
 }
 
 .header-title__top-img-x {
+  width: 24px;
+  min-height: 23px;
+
   position: absolute;
   top: 21px;
   right: 19px;
-  width: 37.5px;
-  min-height: 35.5px;
-  background: url("../img/x-close.png") no-repeat;
+
+  background-image: url("../img/x-close.png");
   background-size: cover;
 }
 
 .header-title__links {
-  margin-bottom: 21px;
-  padding-left: 0;
+  min-height: 64px;
+
   margin-left: -40px;
+
+  padding-left: 0;
+
   text-align: center;
 }
 
@@ -91,15 +88,20 @@
 }
 
 .header-title__line-down {
-  display: block;
-  background: $black-color;
   min-height: 1px;
-  margin-top: 12px;
+
+  display: block;
+
+  background: $black-color;
 }
 
 .header-title__line-down-link {
   position: relative;
-  top: 21px;
+  top: 30px;
+}
+
+.header-title__line-down-link-last {
+  top: 30px;
 }
 
 // header-title

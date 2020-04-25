@@ -2,26 +2,37 @@
 
 .users-pix {
   min-height: 2484px;
+
   margin-top: -701px;
   margin-left: -20px;
   margin-right: -20px;
 
   background-color: $white-color;
 
-  border: 2px solid $special-border-red-color;
+  border: 2px solid $special-border-red-color; // временно
+}
+
+.users-pix__fkex {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  display: flex;
+  justify-content: center;
 }
 
 .users-pix__description {
-  text-align: center;
-  font-size: 14px;
-  font-weight: normal;
-  color: $one-dark-blue-color;
-  line-height: 2.143;
+  margin-top: 0;
+  margin-bottom: 0;
 
   padding-top: 55px;
-  padding-left: 20px; // +20px из-за padding 0 для body
-  padding-right: 39px; // +20px из-за padding 0 для body
+  padding-left: 16px;
+  padding-right: 17px;
   padding-bottom: 56px;
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 2.143;
+  color: $one-dark-blue-color;
 }
 
 .users-pix__content-add {
@@ -29,28 +40,28 @@
 }
 
 .users-pix__top-day-bg {
-  background-color: $crimson-color;
-  width: 429px;
+  width: 140px;
+
   position: absolute;
   right: 20px;
 
-  padding-top: 5px;
-  padding-left: 20px;
-  padding-right: 21px;
-  padding-bottom: 19px;
+  background-color: $crimson-color;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .users-pix__top-day {
-  font-size: 42px;
-  color: $white-color;
+  margin: 0;
+
+  display: block;
+
+  font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 2;
+  color: $white-color;
   text-align: center;
-
-  display: block;
-  justify-content: center;
-  margin: 0;
 }
 
 .users-pix__img {
@@ -58,67 +69,88 @@
 }
 
 .users-pix__img-panoramic {
-  min-height: 420px;
-  background: url("../img/panorama-mobile@1x.jpg") no-repeat;
-  background-size: contain;
+  width: 100%;
+  min-height: 137px;
+
+  background-image: url("../img/panorama-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .users-pix__img-levon {
-  min-height: 630px;
-  background: url("../img/photo-car-mobile@1x.jpg") no-repeat;
-  background-size: contain;
+  min-height: 180px;
 
   margin-left: 20px;
   margin-right: 20px;
+
+  background-image: url("../img/photo-car-mobile@1x.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .users-pix__img-anton {
-  min-height: 630px;
-  background: url("../img/photo-drumset-mobile@1x.jpg") no-repeat;
-  background-size: contain;
+  min-height: 180px;
 
   margin-left: 20px;
   margin-right: 20px;
+
+  background-image: url("../img/photo-drumset-mobile@1x.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .users-pix__img-boris {
-  min-height: 630px;
-  background: url("../img/photo-window-mobile@1x.jpg") no-repeat;
-  background-size: contain;
+  min-height: 180px;
 
   margin-left: 20px;
   margin-right: 20px;
+
+  background-image: url("../img/photo-window-mobile@1x.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .users-pix__img-sergey {
-  min-height: 630px;
-  background: url("../img/photo-fair-mobile@1x.jpg") no-repeat;
-  background-size: contain;
+  min-height: 180px;
 
   margin-left: 20px;
   margin-right: 20px;
+
+  background-image: url("../img/photo-fair-mobile@1x.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .users-pix__img-maxim {
-  min-height: 630px;
-  background: url("../img/photo-pov-mobile@1x.jpg") no-repeat;
-  background-size: contain;
+  min-height: 180px;
 
   margin-left: 20px;
   margin-right: 20px;
+
+  background-image: url("../img/photo-pov-mobile@1x.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .users-pix__img-nadezhda {
-  min-height: 630px;
-  background: url("../img/photo-wing-mobile@1x.jpg") no-repeat;
-  background-size: contain;
+  min-height: 180px;
 
   margin-left: 20px;
   margin-right: 20px;
+
+  background-image: url("../img/photo-wing-mobile@1x.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .users-pix__info-pix {
-  background-color: $lite-white-color;
   margin-left: 20px;
   margin-right: 20px;
 
@@ -126,57 +158,58 @@
   padding-left: 18px;
   padding-right: 13px;
   padding-bottom: 26px;
+
+  background-color: $lite-white-color;
 }
 
 .users-pix__main {
   display: flex;
+  align-items: center;
 }
 
 .users-pix__name {
-  color: $one-dark-blue-color;
-  font-size: 40px;
+  font-size: 14px;
   line-height: 1.714;
   font-weight: bold;
+  color: $one-dark-blue-color;
 }
 
 .users-pix__last-time {
-  color: $one-dark-blue-color;
-  font-size: 40px;
+  font-size: 12px;
   line-height: 1.714;
-  font-weight: normal;
   text-transform: uppercase;
+  color: $one-dark-blue-color;
 }
 
 .users-pix__message {
-  color: $one-dark-blue-color;
-  font-size: 40px;
-  line-height: 1.714;
-  font-weight: normal;
-
   margin-top: -10px;
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 1.714;
+  color: $one-dark-blue-color;
 }
 
 .users-pix__likes {
+  margin-top: 0;
+
   display: flex;
+  align-items: center;
 
   svg {
-    width: 37.5px;
-    height: 35.5px;
-    position: relative;
-    top: 60px;
-    left: 2px;
+    width: 13px;
+    height: 12px;
 
-    padding-right: 104px;
+    padding-right: 19px;
   }
 }
 
 .users-pix__text,
 .users-pix__total {
-  color: $crimson-color;
-  font-size: 40px;
+  font-size: 12px;
   line-height: 1.714;
-  font-weight: normal;
   text-transform: uppercase;
+  color: $crimson-color;
 }
 
 // users-pix

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width" />
 </head>
 
 <body class="general">
@@ -24,7 +25,7 @@
       <div class="header-title__down">
         <ul class="header-title__menu-link-main">
           <li class="header-title__links">
-            <span class="header-title__line-top"></span>
+            <span class="header-title__line-top header-title__line-top-main"></span>
             <a href="index.html" class="header-title__link">
               Главная
             </a>
@@ -49,7 +50,7 @@
             <a href="https://htmlacademy.ru/intensive/adaptive" class="header-title__link">
               Html Academy
             </a>
-            <span class="header-title__line-down header-title__line-down-link"></span>
+            <span class="header-title__line-down header-title__line-down-link header-title__line-down-link-last"></span>
           </li>
         </ul>
       </div>
@@ -60,17 +61,19 @@
     <section class="users-photo">
       <p class="visually-hidden">Фотографии пользователей</p>
       <h2 class="users-photo__header">
-        Фотографии<br> пользователей
+        Фотографии пользователей
       </h2>
       <span class="users-photo__img"></span>
     </section>
 
     <section class="users-pix">
       <h2 class="visually-hidden">Панорамные Фотографии пользователей</h2>
-      <p class="users-pix__description">
-        Взгляните на фотографии, которые выкладывают пользователи!<br>
-        Видите, как не хватает ваших?
-      </p>
+      <div class="users-pix__fkex">
+        <p class="users-pix__description">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </p>
+      </div>
       <!-- Анна (начало) -->
       <div class="users-pix__content users-pix__content-add">
         <div class="users-pix__top-day-bg">
@@ -97,9 +100,9 @@
             </p>
             <div class="users-pix__likes">
               <span class="users-pix__img users-pix__img-like">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="521.939 473.064 12.545 11.99"
-                  enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
+                  xml:space="preserve">
                   <g>
                     <path fill="#d22856"
                       d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
@@ -137,10 +140,9 @@
             </p>
             <div class="users-pix__likes">
               <span class="users-pix__img users-pix__img-like">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-                  viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-                  xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
+                  enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                   <g>
                     <path fill="#d22856"
                       d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
@@ -177,10 +179,9 @@
             </p>
             <div class="users-pix__likes">
               <span class="users-pix__img users-pix__img-like">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-                  viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-                  xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
+                  enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                   <g>
                     <path fill="#d22856"
                       d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
@@ -203,10 +204,9 @@
       <div class="users-pix__content users-pix__content-add">
         <div class="users-pix__client">
           <span class="users-pix__img users-pix__img-boris">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-              viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-              xml:space="preserve">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
+              enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
               <g>
                 <path fill="#d22856"
                   d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
@@ -228,10 +228,9 @@
             </p>
             <div class="users-pix__likes">
               <span class="users-pix__img users-pix__img-like">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-                  viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-                  xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
+                  enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                   <g>
                     <path fill="#d22856"
                       d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
@@ -254,10 +253,9 @@
       <div class="users-pix__content users-pix__content-add">
         <div class="users-pix__client">
           <span class="users-pix__img users-pix__img-sergey">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-              viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-              xml:space="preserve">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
+              enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
               <g>
                 <path fill="#d22856"
                   d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
@@ -278,10 +276,9 @@
             </p>
             <div class="users-pix__likes">
               <span class="users-pix__img users-pix__img-like">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-                  viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-                  xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
+                  enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                   <g>
                     <path fill="#d22856"
                       d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
@@ -304,10 +301,9 @@
       <div class="users-pix__content users-pix__content-add">
         <div class="users-pix__client">
           <span class="users-pix__img users-pix__img-maxim">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-              viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-              xml:space="preserve">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
+              enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
               <g>
                 <path fill="#d22856"
                   d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
@@ -328,10 +324,9 @@
             </p>
             <div class="users-pix__likes">
               <span class="users-pix__img users-pix__img-like">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-                  viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-                  xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
+                  enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                   <g>
                     <path fill="#d22856"
                       d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
@@ -353,17 +348,7 @@
       <!-- Надежда (начало) -->
       <div class="users-pix__content">
         <div class="users-pix__client">
-          <span class="users-pix__img users-pix__img-nadezhda">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-              viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-              xml:space="preserve">
-              <g>
-                <path fill="#d22856"
-                  d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-              </g>
-            </svg>
-          </span>
+          <span class="users-pix__img users-pix__img-nadezhda"></span>
           <div class="users-pix__info-pix">
             <div class="users-pix__main">
               <p class="users-pix__name">
@@ -378,10 +363,9 @@
             </p>
             <div class="users-pix__likes">
               <span class="users-pix__img users-pix__img-like">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-                  viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-                  xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
+                  enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                   <g>
                     <path fill="#d22856"
                       d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
@@ -405,8 +389,8 @@
     <!-- Затмите из всех (начало) -->
     <section class="diamond">
       <h1 class="visually-hidden">Затмите из всех</h1>
-      <p class="diamond__tezt">
-        Затмите их всех!
+      <p class="diamond__text">
+        Затмите их всех!<br>
         Выкладывайте все,
         что накопилось в телефоне!
       </p>
@@ -423,40 +407,63 @@
         <!-- - -->
         <!-- Управление загрузкой фото -->
         <fieldset class="add-photo__nav">
-          <ul class=add-photo__options-img>
+          <ul class="add-photo__options-img">
             <li class="add-photo__option-img">
               <input tabindex="0" class="add-photo__crop" type="radio" id="crop" name="Управление загрузкой фото"
                 value="Кадрирование" checked>
-              <label for="crop"><img src="https://via.placeholder.com/150x150" width="50" height="33"
-                  alt="Кадрирование"></label>
+              <label for="crop">
+                <svg fill="#d22856" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48"
+                  xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z" />
+                  <path
+                    d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
+                </svg>
+              </label>
             </li>
             <li class="add-photo__option-img">
               <input tabindex="0" class="add-photo__paint" type="radio" id="paint" name="Управление загрузкой фото"
                 value="Заливка">
-              <label for="paint"><img src="https://via.placeholder.com/150x150" width="50" height="33"
-                  alt="Заливка">></label>
+              <label for="paint">
+                <svg fill="#b5b9be" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48"
+                  xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z" />
+                  <path
+                    d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
+                  <rect y="40" width="48" height="3" />
+                </svg>
+              </label>
             </li>
             <li class="add-photo__option-img">
               <input tabindex="0" class="add-photo__change-color" type="radio" id="change-color"
                 name="Управление загрузкой фото" value="Изменение цвета">
-              <label for="change-color"><img src="https://via.placeholder.com/150x150" width="50" height="33"
-                  alt="Изменение цвета"></label>
+              <label for="change-color">
+                <svg fill="#b5b9be" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px" y="0px" width="48px" height="48px" viewBox="-35.422 -7.96 31.92 31.92"
+                  enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                  <path fill="#b5b9be"
+                    d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
+                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
+                </svg>
+              </label>
             </li>
           </ul>
           <!--
-          <script>
-          function sizePic() {
-            size = document.getElementById("size").value;
-            img = document.getElementById("pic");
-            img.width = 60 + 20*size;
-          }
-          </script>
-        -->
-          <input class="add-photo__range" type="range" min="1" max="5" id="size" value="3" name="Ползунок">
+            <script>
+              function sizePic() {
+                size = document.getElementById("size").value;
+                img = document.getElementById("pic");
+                img.width = 60 + 20*size;
+              }
+            </script>
+          -->
+          <input class="add-photo__range" type="range" min="1" max="5" id="size" value="4" name="Ползунок">
           <!-- <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="3"> -->
         </fieldset>
-        <button type="submit" class="add-photo__send-form">Запостить</button>
-        <button type="reset" class="add-photo__cancel-form">Отмена</button>
+        <span class="add-photo__line"></span>
+        <button type="submit" class="add-photo__send-form general__button-style">Запостить</button>
+        <button type="reset" class="add-photo__cancel-form general__button-style">Отмена</button>
         <!-- Управление загрузкой фото -->
       </form>
     </section>
@@ -472,7 +479,7 @@
         <li class="footer-pink___social-links">
           <a href="https://twitter.com/htmlacademy_ru"
             class="footer-pink__tw footer-pink___link footer-pink___link-radius">
-            <svg xmlns="http://www.w3.org/2000/svg"
+            <svg class="footer-pink__tw-svg" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17.5 14.663"
               enable-background="new 0 0 17.5 14.663" xml:space="preserve">
               <g id="W6EeEF_1_">
@@ -485,7 +492,7 @@
           </a>
           <a href="https://www.facebook.com/htmlacademy"
             class="footer-pink__fb footer-pink___link footer-pink___link-radius">
-            <svg xmlns="http://www.w3.org/2000/svg"
+            <svg class="footer-pink__fb-svg" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.673 18.944"
               enable-background="new 0 0 8.673 18.944" xml:space="preserve">
               <path fill="#d22856"
@@ -494,7 +501,7 @@
           </a>
           <a href="https://www.youtube.com/user/htmlacademyru"
             class="footer-pink__youtube footer-pink___link footer-pink___link-radius">
-            <svg xmlns="http://www.w3.org/2000/svg"
+            <svg class="footer-pink__youtube-svg" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14.64 13.96"
               enable-background="new 0 0 14.64 13.96" xml:space="preserve">
               <path fill="#d22856"
@@ -502,12 +509,12 @@
             </svg>
           </a>
         </li>
-        <li class="footer-pink_____copyright">
+        <li class="footer-pink____copyright">
           <p class="footer-pink____developed-by">
             Разработано
           </p>
           <a href="https://htmlacademy.ru/" class="footer-pink__copyright-img footer-pink___link">
-            <svg xmlns="http://www.w3.org/2000/svg"
+            <svg class="footer-pink__copyright-svg" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26.943 34.09"
               enable-background="new 0 0 26.943 34.09" xml:space="preserve">
               <path fill="#d22856"

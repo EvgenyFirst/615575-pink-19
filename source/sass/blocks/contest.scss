@@ -1,28 +1,36 @@
 // contest
 
 .contest {
+  min-height: 170px;
+
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
+
+  margin-top: -62px;
+  margin-left: -20px;
+  margin-right: -20px;
 
   position: relative;
   z-index: -1;
 
-  min-height: 1415px;
-  margin-top: -203px;
+  border: 2px solid $special-border-lite-green-color; // временно
+}
 
-  margin-left: -20px;
-  margin-right: -20px;
+.contest__header-container {
+  margin-top: 91px; // визуально padding-margin-top: 0, по факту margin-top: 36px
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 53px;
 
-  border: 2px solid $special-border-lite-green-color;
+  padding-left: 11px;
+  padding-right: 11px;
 }
 
 .contest__header {
-  padding-top: 257px;
+  font-size: 24px;
   text-align: center;
-  font-size: 48px;
-  line-height: normal;
-  color: $white-color;
   font-weight: 400;
+  color: $white-color;
 }
 
 // contest
