@@ -1,0 +1,22 @@
+// diamond
+
+.diamond {
+  border: 2px solid $special-border-lite-green-color; // временно
+}
+
+.diamond__text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 2.143;
+  color: $one-dark-blue-color;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-top: 45px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-bottom: 47px;
+}
+
+// diamond

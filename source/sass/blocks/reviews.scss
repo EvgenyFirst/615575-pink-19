@@ -1,0 +1,43 @@
+// reviews
+
+.reviews {
+  margin-top: -41px; // визуально margin-top: 0, по факту margin-top: -41px;
+
+  background-color: $white-color;
+  position: relative;
+  z-index: 1;
+
+  border: 2px solid $special-border-red-color; // временно
+}
+
+.reviews__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding-top: 51px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 56px;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__author-name {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.667;
+  color: $black-color;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 2.143;
+  color: $one-dark-blue-color;
+}
+
+// reviews

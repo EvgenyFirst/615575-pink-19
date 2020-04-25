@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width" />
 </head>
 
 <body class="general">
@@ -24,7 +25,7 @@
       <div class="header-title__down">
         <ul class="header-title__menu-link-main">
           <li class="header-title__links">
-            <span class="header-title__line-top"></span>
+            <span class="header-title__line-top header-title__line-top-main"></span>
             <a href="index.html" class="header-title__link">
               Главная
             </a>
@@ -49,7 +50,7 @@
             <a href="https://htmlacademy.ru/intensive/adaptive" class="header-title__link">
               Html Academy
             </a>
-            <span class="header-title__line-down header-title__line-down-link"></span>
+            <span class="header-title__line-down header-title__line-down-link header-title__line-down-link-last"></span>
           </li>
         </ul>
       </div>
@@ -60,7 +61,7 @@
     <section class="phone-in-hand">
       <h1 class="visually-hidden">Телефон в руке на фоне здания</h1>
       <h1 class="phone-in-hand__header">
-        Взгляните на жизнь<br> иначе!
+        Взгляните на жизнь иначе!
       </h1>
       <span class="phone-in-hand__img"></span>
     </section>
@@ -69,23 +70,27 @@
     <!-- Скачать пложение для различных платформ (начало) -->
     <section class="load-app">
       <h1 class="visually-hidden">Скачать пложение для различных платформ</h1>
-      <a href="#" class="load-app__download-link">Скачать приложение</a>
-      <ul class="load-app__links">
-        <li class="load-app__link">
-          <a href="https://www.apple.com/ru/ios/app-store" class="load-app__platform load-app__platform-apple"></a>
-        </li>
-        <li class="load-app__link">
-          <a href="https://play.google.com/store/apps" class="load-app__platform load-app__platform-android"></a>
-        </li>
-        <li class="load-app__link">
-          <a href="https://www.microsoft.com/ru-ru/store/top-free/apps/pc"
-            class="load-app__platform load-app__platform-windows"></a>
-        </li>
-      </ul>
-      <div class="load-app__availability">
-        <p class="load-app__text">
-          Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8
-        </p>
+      <div class="load-app__container">
+        <a href="#" class="load-app__download-link general__button-style">Скачать приложение</a>
+        <div class="load-app__flex">
+          <ul class="load-app__links">
+            <li class="load-app__link">
+              <a href="https://www.apple.com/ru/ios/app-store" class="load-app__platform load-app__platform-apple"></a>
+            </li>
+            <li class="load-app__link">
+              <a href="https://play.google.com/store/apps" class="load-app__platform load-app__platform-android"></a>
+            </li>
+            <li class="load-app__link">
+              <a href="https://www.microsoft.com/ru-ru/store/top-free/apps/pc"
+                class="load-app__platform load-app__platform-windows"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="load-app__availability">
+          <p class="load-app__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
       </div>
     </section>
     <!-- Скачать пложение для различных платформ (конец) -->
@@ -95,10 +100,10 @@
       <p class="visually-hidden">Плюсы приложения "Пинк"</p>
       <div class="values-pink-app__bg-headers">
         <h2 class="values-pink-app__mega">
-          Устали от серости<br> мегаполиса?
+          Устали от серости мегаполиса?
         </h2>
         <h2 class="values-pink-app__price">
-          Нам есть, что вам<br> предложить!
+          Нам есть, что вам предложить!
         </h2>
       </div>
       <div class="values-pink-app__bg">
@@ -134,7 +139,9 @@
             </p>
           </li>
         </ul>
-        <span class="values-pink-app__img"></span>
+        <div class="values-pink-app__img-flex">
+          <span class="values-pink-app__img"></span>
+        </div>
       </div>
     </section>
     <!-- Плюсы приложения "Пинк" (конец) -->
@@ -144,7 +151,7 @@
       <h2 class="visually-hidden">Отзывы</h2>
       <div class="reviews__wrapper slider">
         <div class="reviews__list  slider__list">
-          <blockquote class="reviews__item  slider__item">
+          <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Николай Петров</cite>
             <p class="reviews__text">
               «Это приложение перевернуло мой мир и позволило
@@ -153,7 +160,7 @@
               комментариях к выложенной фотографии!»
             </p>
           </blockquote>
-          <blockquote class="reviews__item  slider__item">
+          <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Николай Петров</cite>
             <p class="reviews__text">
               «Это приложение перевернуло мой мир и позволило
@@ -162,7 +169,7 @@
               комментариях к выложенной фотографии!»
             </p>
           </blockquote>
-          <blockquote class="reviews__item  slider__item">
+          <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Николай Петров</cite>
             <p class="reviews__text">
               «Это приложение перевернуло мой мир и позволило
@@ -184,46 +191,165 @@
     <!-- Цены (начало) -->
     <section class="catalog">
       <h1 class="visually-hidden">Цены</h1>
+
       <ul class="catalog__lines">
-        <li class="catalog__line">
-          <span class="catalog__img"></span>
-          <div class="catalog__info">
-            <p class="catalog__type">
-              Стандарт
-            </p>
-            <div class="catalog__total-price">
-              <p class="catalog__price-tag">
-                3,99
+        <li class="catalog__lines-hr">
+          <div class="catalog__lines-hr-vertical">
+            <span class="catalog__lines-hr-style catalog__lines-hr-left"></span>
+            <span class="catalog__lines-hr-style catalog__lines-hr-right"></span>
+          </div>
+          <div class="catalog__lines-hr-horizontal">
+            <span class="catalog__lines-hr-style catalog__lines-hr-one"></span>
+            <span class="catalog__lines-hr-style catalog__lines-hr-two"></span>
+            <span class="catalog__lines-hr-style catalog__lines-hr-three"></span>
+          </div>
+        </li>
+        <li class="catalog__line catalog__line-flex">
+          <div class="catalog__line-wrap">
+            <div class="catalog__info-center">
+              <p class="catalog__type">
+                База
               </p>
-              <p class="catalog__currency">
-                USD
-              </p>
+              <div class="catalog__total-price">
+                <p class="catalog__price-tag">
+                  1,99&nbsp;
+                </p>
+                <p class="catalog__currency">
+                  USD
+                </p>
+              </div>
             </div>
           </div>
         </li>
-        <li class="catalog__line">
-          <p class="catalog__name-price">
-            Розовый фильтр
-          </p>
-          <img class="catalog__name-price-image" src="https://via.placeholder.com/150x150" width="50" height="33"
-            alt="Галочка">
-        </li>
-        <li class="catalog__line">
-          <p class="catalog__name-price">
-            Смайлики
-          </p>
-          <img class="catalog__name-price-image" src="https://via.placeholder.com/150x150" width="50" height="33"
-            alt="Галочка">
-        </li>
-        <li class="catalog__line">
-          <p class="catalog__name-price">
-            Комментарии
-          </p>
-          <img class="catalog__name-price-image" src="https://via.placeholder.com/150x150" width="50" height="33"
-            alt="Крестик">
+        <li class="catalog__line catalog__line-order">
+          <div class="catalog__line-orders">
+            <p class="catalog__name-price">
+              Розовый фильтр
+            </p>
+            <span class="catalog__check-price-image"></span>
+          </div>
+          <div class="catalog__line-orders">
+            <p class="catalog__name-price">
+              Смайлики
+            </p>
+            <span class="catalog__cross-price-image"></span>
+          </div>
+          <div class="catalog__line-orders">
+            <p class="catalog__name-price">
+              Комментарии
+            </p>
+            <span class="catalog__cross-price-image"></span>
+          </div>
         </li>
       </ul>
-      <p class="catalog__toggles catalog__slider-toggles">
+
+      <ul class="catalog__lines">
+        <li class="catalog__lines-hr">
+          <div class="catalog__lines-hr-vertical">
+            <span class="catalog__lines-hr-style catalog__lines-hr-left"></span>
+            <span class="catalog__lines-hr-style catalog__lines-hr-right"></span>
+          </div>
+          <div class="catalog__lines-hr-horizontal">
+            <span class="catalog__lines-hr-style catalog__lines-hr-one"></span>
+            <span class="catalog__lines-hr-style catalog__lines-hr-two"></span>
+            <span class="catalog__lines-hr-style catalog__lines-hr-three"></span>
+          </div>
+        </li>
+        <li class="catalog__line catalog__line-flex">
+          <div class="catalog__line-wrap">
+            <span class="catalog__img">
+              <p class="catalog__text-top">
+                Хит
+              </p>
+            </span>
+            <div class="catalog__info">
+              <p class="catalog__type">
+                Стандарт
+              </p>
+              <div class="catalog__total-price">
+                <p class="catalog__price-tag">
+                  3,99&nbsp;
+                </p>
+                <p class="catalog__currency">
+                  USD
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__line catalog__line-order">
+          <div class="catalog__line-orders catalog__line-orders-flex">
+            <p class="catalog__name-price">
+              Розовый фильтр
+            </p>
+            <span class="catalog__check-price-image"></span>
+          </div>
+          <div class="catalog__line-orders">
+            <p class="catalog__name-price">
+              Смайлики
+            </p>
+            <span class="catalog__check-price-image"></span>
+          </div>
+          <div class="catalog__line-orders">
+            <p class="catalog__name-price">
+              Комментарии
+            </p>
+            <span class="catalog__cross-price-image"></span>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="catalog__lines">
+        <li class="catalog__lines-hr">
+          <div class="catalog__lines-hr-vertical">
+            <span class="catalog__lines-hr-style catalog__lines-hr-left"></span>
+            <span class="catalog__lines-hr-style catalog__lines-hr-right"></span>
+          </div>
+          <div class="catalog__lines-hr-horizontal">
+            <span class="catalog__lines-hr-style catalog__lines-hr-one"></span>
+            <span class="catalog__lines-hr-style catalog__lines-hr-two"></span>
+            <span class="catalog__lines-hr-style catalog__lines-hr-three"></span>
+          </div>
+        </li>
+        <li class="catalog__line catalog__line-flex">
+          <div class="catalog__line-wrap">
+            <div class="catalog__info-cente">
+              <p class="catalog__type">
+                Анлим
+              </p>
+              <div class="catalog__total-price">
+                <p class="catalog__price-tag">
+                  9,99&nbsp;
+                </p>
+                <p class="catalog__currency">
+                  USD
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__line catalog__line-order">
+          <div class="catalog__line-orders">
+            <p class="catalog__name-price">
+              Розовый фильтр
+            </p>
+            <span class="catalog__check-price-image"></span>
+          </div>
+          <div class="catalog__line-orders">
+            <p class="catalog__name-price">
+              Смайлики
+            </p>
+            <span class="catalog__check-price-image"></span>
+          </div>
+          <div class="catalog__line-orders">
+            <p class="catalog__name-price">
+              Комментарии
+            </p>
+            <span class="catalog__check-price-image"></span>
+          </div>
+        </li>
+      </ul>
+      <p class="catalog__slider-toggles">
         <button class="catalog__toggles-toggle" type="button">1</button>
         <button class="catalog__toggles-toggle  catalog__toggles-toggle-active" type="button">2</button>
         <button class="catalog__toggles-toggle" type="button">3</button>
@@ -246,19 +372,20 @@
             <p class="contacts__text">
               Звоните:
             </p>
-            <a href="tel:+7(812)555-66-66" class="contacts__phone">+7 (812) 555-66-66</a>
+            <a class="contacts__data contacts__phone" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__info">
             <p class="contacts__text">
               Пишите:
             </p>
-            <a href="mail@htmlacademy.ru" class="contacts__email">mail@htmlacademy.ru</a>
+            <a class="contacts__data contacts__email"
+              href="mailto:mail@htmlacademy.ru?subject=mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__info">
             <p class="contacts__text">
-              Приезжайте в гости::
+              Приезжайте в гости:
             </p>
-            <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
+            <address class="contacts__data contacts__address">ул. Большая Конюшенная, 19/8</address>
           </li>
         </ul>
       </div>
@@ -268,6 +395,7 @@
     <!-- Местоположение (начало) -->
     <section class="coordinates">
       <h1 class="visually-hidden">Местоположение</h1>
+      <span class="contacts__bg-top"></span>
       <span class="coordinates__img"></span>
     </section>
     <!-- Местоположение (конец) -->

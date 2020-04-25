@@ -1,0 +1,113 @@
+// add-photo
+
+.add-photo {
+  width: 100%;
+  border: 2px solid $special-border-blue-color; // временно
+}
+
+.add-photo__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.add-photo__img {
+  width: 280px;
+  min-height: 374px;
+
+  background-image: url("../img/photo-7-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.add-photo__nav {
+  margin-top: 40px;
+  margin-bottom: 27px;
+
+  border: none;
+}
+
+.add-photo__options-img {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-left: 0;
+
+  &:first-child {
+    padding-right: 20px;
+  }
+
+  &:nth-child(2) {
+    padding-right: 40px;
+  }
+}
+
+.add-photo__option-img {
+  &:first-child {
+    padding-right: 20px;
+  }
+
+  &:nth-child(2) {
+    padding-right: 15px;
+  }
+}
+
+.add-photo__range {
+  width: 100%;
+
+  margin-top: 40px;
+}
+
+.add-photo__line {
+  width: 100vw;
+  min-height: 1px;
+
+  display: block;
+
+  margin-left: -29px;
+  margin-bottom: 37px;
+
+  position: relative;
+  top: 0;
+
+  background: $lite-grey-blue-color;
+}
+
+.add-photo__send-form {
+  border: 3px solid $crimson-color;
+
+  margin-bottom: 12px;
+
+  padding-top: 13px;
+  padding-left: 91px;
+  padding-right: 91px;
+  padding-bottom: 15px;
+
+  color: $crimson-color;
+  background-color: transparent;
+}
+
+.add-photo__cancel-form {
+  margin-bottom: 41px;
+
+  padding-top: 13px;
+  padding-left: 103px;
+  padding-right: 103px;
+  padding-bottom: 15px;
+
+  color: $lite-grey-blue-color;
+  border: 3px solid $lite-grey-blue-color;
+  background-color: transparent;
+}
+
+// add-photo

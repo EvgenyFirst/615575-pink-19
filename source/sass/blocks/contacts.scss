@@ -1,0 +1,76 @@
+// contacts
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin-left: -20px;
+  margin-right: -20px;
+
+  border: 2px solid $special-border-red-color; // временно
+  background-color: $white-color;
+}
+
+.contacts__wrapper {
+  margin-top: 38px; // визуально margin-top: 0, по факту margin-top: -10px;
+  width: 100%;
+}
+
+.contacts__header {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-left: 44px;
+  padding-right: 43px;
+
+  font-size: 24px;
+  font-weight: 400;
+  color: $one-dark-blue-color;
+}
+
+.contacts__content {
+  list-style: none;
+
+  margin-top: 25px;
+  margin-bottom: 23px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contacts__info {
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 18px;
+  font-weight: bold;
+  color: $one-dark-blue-color;
+}
+
+.contacts__data {
+  font-size: 24px;
+  font-weight: 400;
+  color: $crimson-color;
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts__phone,
+.contacts__email {
+  text-decoration: none;
+}
+
+// contacts

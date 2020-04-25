@@ -6,79 +6,91 @@
 
   margin-left: -20px;
   margin-right: -20px;
-  padding-top: 138px;
 
   text-align: center;
 
-  border: 2px solid $special-border-red-color;
+  border: 2px solid $special-border-red-color; // временно
+}
+
+.load-app__container {
+  margin-top: 56px; // визуально padding-margin-top: 0, по факту margin-top: 18px
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .load-app__download-link {
-  text-decoration: none;
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 1;
   color: $white-color;
-
   border: 3px solid $white-color;
-  border-radius: 70px;
 
-  padding-top: 34px;
-  padding-left: 160px;
-  padding-right: 160px;
-  padding-bottom: 40px;
+  padding-top: 13px;
+  padding-left: 42px;
+  padding-right: 41px;
+  padding-bottom: 15px;
+}
+
+.load-app__flex {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 53px;
 }
 
 .load-app__links {
+  width: 205px;
+
+  list-style: none;
+
   display: flex;
-  justify-content: center;
-  margin-left: -20px;
-  padding-top: 138px;
-  padding-left: 0;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding: 0;
 }
 
 .load-app__platform-apple {
+  width: 47px;
+  min-height: 57px;
+
   display: block;
-  width: 120px;
-  height: 145px;
-  background: url("../img/logo-apple.svg") no-repeat;
+
+  background-image: url("../img/logo-apple.svg");
   background-size: cover;
-  position: relative;
-  right: 91px;
 }
 
 .load-app__platform-android {
+  width: 43px;
+  min-height: 47px;
+
   display: block;
-  width: 130px;
-  height: 145px;
-  background: url("../img/logo-android.svg") no-repeat;
+
+  background-image: url("../img/logo-android.svg");
   background-size: cover;
-  position: relative;
-  left: 27px;
 }
 
 .load-app__platform-windows {
+  width: 44px;
+  min-height: 41px;
+
   display: block;
-  width: 150px;
-  height: 145px;
-  background: url("../img/logo-microsoft.svg") no-repeat;
+
+  background-image: url("../img/logo-microsoft.svg");
   background-size: cover;
-  position: relative;
-  left: 140px;
 }
 
 .load-app__availability {
-  padding-top: 100px;
+  padding-top: 29px;
   padding-left: 8px;
   padding-right: 5px;
-  padding-bottom: 100px;
+  padding-bottom: 35px;
 }
 
 .load-app__text {
   font-size: 14px;
-  color: $white-color;
   line-height: 1.714;
-  font-weight: normal;
+  color: $white-color;
 }
 
 // load-app

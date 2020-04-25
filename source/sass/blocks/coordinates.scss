@@ -1,0 +1,41 @@
+// coordinates
+
+.coordinates {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid $special-border-lite-green-color; // временно
+}
+
+.contacts__bg-top {
+  width: 1200px;
+  min-height: 123px;
+
+  display: block;
+
+  position: relative;
+  right: 457px;
+  z-index: 6;
+
+  background-image: url("../img/triangle-white-footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.coordinates__img {
+  display: block;
+
+  min-height: 645px;
+
+  margin-top: -478px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  z-index: -1;
+
+  background: url("../img/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// coordinates
