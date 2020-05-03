@@ -9,6 +9,10 @@
   border: 2px solid $special-border-red-color; // временно
 }
 
+.footer-pink__index {
+  display: none;
+}
+
 .footer-pink__blocks {
   list-style: none;
 
@@ -118,6 +122,38 @@
   font-size: 14px;
   color: $one-dark-blue-color;
   line-height: 1.286;
+}
+
+// ---------------------------
+
+@media (min-width: $tablet-width) {
+  .footer-pink {
+    min-height: 127px;
+  }
+
+  .footer-pink__index {
+    display: block;
+  }
+
+  .footer-pink__blocks {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+
+    padding-top: 32.6px; // делим общее расстояние от блока до блока пополам
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 40px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-pink___social-links,
+  .footer-pink____copyright {
+    margin-top: 0;
+  }
 }
 
 // footer-pink

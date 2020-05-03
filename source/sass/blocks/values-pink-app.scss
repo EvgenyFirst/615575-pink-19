@@ -93,4 +93,83 @@
   background-repeat: no-repeat;
 }
 
+// ---------------------------
+
+@media (min-width: $tablet-width) {
+  .values-pink-app {
+    margin-top: 38px;
+    min-height: 778px;
+  }
+
+  .values-pink-app__bg-headers {
+    padding-top: 23px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 22px;
+  }
+
+  .values-pink-app__mega,
+  .values-pink-app__price {
+    font-size: 40px;
+  }
+
+  .values-pink-app__mega {
+    margin-bottom: 0;
+
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .values-pink-app__price {
+    margin-top: 0;
+
+    padding-left: 5px;
+    padding-right: 4px;
+  }
+
+  .values-pink-app__bg {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    margin-top: 0;
+  }
+
+  .values-pink-app__img {
+    width: 268px;
+    min-height: 481px;
+
+    margin-top: -24px;
+
+    display: block;
+
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .values-pink-app__header {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.333;
+  }
+
+  .values-pink-app__price-list {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .values-pink-app__info {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.8;
+  }
+}
+
 // values-pink-app

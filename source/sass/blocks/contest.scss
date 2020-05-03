@@ -33,4 +33,26 @@
   color: $white-color;
 }
 
+// ---------------------------
+
+@media (min-width: $tablet-width) {
+  .contest {
+    min-height: 716px;
+
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    margin-top: -112px;
+  }
+
+  .contest__header-container {
+    margin-top: 177px;
+  }
+
+  .contest__header {
+    font-size: 50px;
+  }
+}
+
 // contest

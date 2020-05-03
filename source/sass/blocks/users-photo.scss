@@ -25,4 +25,26 @@
   font-weight: 400;
 }
 
+// ---------------------------
+
+@media (min-width: $tablet-width) {
+  .users-photo {
+    min-height: 727px;
+
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    margin-top: -112px;
+  }
+
+  .users-photo__header {
+    padding-top: 137px; // визуально padding-top: 0, по факту padding-top: 56px
+
+    font-size: 50px;
+    color: $white-color;
+    font-weight: 400;
+  }
+}
+
 // users-photo

@@ -40,4 +40,12 @@
   color: $one-dark-blue-color;
 }
 
+// ---------------------------
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    margin-top: 0;
+  }
+}
+
 // reviews
