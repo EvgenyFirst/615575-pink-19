@@ -217,4 +217,78 @@
   }
 }
 
+// ---------------------------
+
+@media (min-width: $desktop-width) {
+  .header-title__top-img-x,
+  .header-title__line-top,
+  .header-title__line-down,
+  .header-title__closed-img {
+    display: none;
+  }
+
+  .header-title__closed {
+    min-height: 0;
+  }
+
+  .header-title {
+    margin-left: -130px;
+
+    padding-left: 130px;
+    padding-right: 130px;
+
+    width: 100%;
+    min-height: 110px;
+
+    background-image: url("../img/header-title-bg-desktop.png");
+    background-size: cover;
+  }
+
+  .header-title__bg {
+    background-color: transparent;
+  }
+
+  .header-title__top-img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header-title__top-img-link {
+    width: 147px;
+    min-height: 40px;
+
+    position: absolute;
+    top: 21px;
+
+    margin-left: 0;
+
+    background-image: url("../img/logo-pink-white-desktop.svg");
+    background-size: cover;
+  }
+
+  .header-title__menu-link-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-width: 620px;
+
+    padding-left: 0;
+  }
+
+  .header-title__down {
+    background: transparent;
+  }
+
+  .header-title__close-open {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-title__link {
+    text-transform: none;
+  }
+}
+
 // header-title

@@ -78,4 +78,47 @@
     font-size: 40px;
   }
 }
+
+// ---------------------------
+
+@media (min-width: $desktop-width) {
+  .phone-in-hand {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100vw;
+    min-height: 861px;
+
+    margin-top: -114px;
+    margin-left: -130px;
+
+    position: relative;
+    z-index: -2;
+  }
+
+  .phone-in-hand__img {
+    width: 883px;
+    min-height: 645px;
+
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+    right: -146px;
+    bottom: 0;
+  }
+
+  .phone-in-hand__header {
+    margin-left: 105px;
+
+    top: 229px;
+    left: 56px;
+
+    width: 247px;
+
+    font-size: 50px;
+  }
+}
 // phone-in-hand

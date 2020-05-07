@@ -276,4 +276,17 @@
   }
 }
 
+// ---------------------------
+
+@media (min-width: $desktop-width) {
+  .share-history {
+    margin-top: -465px;
+  }
+
+  .share-history__white-bg {
+    margin-left: -130px;
+    height: 100%;
+  }
+}
+
 // share-history

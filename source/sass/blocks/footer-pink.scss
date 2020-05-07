@@ -156,4 +156,38 @@
   }
 }
 
+// ---------------------------
+
+@media (min-width: $desktop-width) {
+  // расстояние между блоком подвала и формы 69px, делю высоту пополам
+  // расстояние от блока с формой (зеленая кнопка) и низ подвала 197px,
+  // таким образом, высота подвала 197px-34.5px=162.5px
+  .footer-pink {
+    min-height: 162.5px;
+
+    margin-left: 0;
+    margin-right: -4px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer-pink__blocks {
+    margin-top: 34.5px; // считаем, исходя из размеров, что расстояние между блоком подвала и формы 69px, делю высоту пополам
+    margin-left: 0;
+    margin-right: 0;
+
+    padding-bottom: 80px;
+  }
+
+  .footer-pink__logo-link-img {
+    width: 147px;
+    min-height: 48px;
+
+    background-image: url("../img/logo-pink-blue-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
 // footer-pink

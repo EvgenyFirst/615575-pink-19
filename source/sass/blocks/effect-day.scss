@@ -61,4 +61,61 @@
   }
 }
 
+// ---------------------------
+
+@media (min-width: $desktop-width) {
+  .effect-day {
+    margin-top: -2px;
+    background-color: $lite-white-color;
+  }
+
+  .effect-day__grey-bg {
+    position: absolute;
+
+    margin-top: 0;
+    margin-left: -130px;
+
+    width: 100vw;
+    min-height: 39%;
+
+    z-index: -1;
+
+    background-color: $lite-white-color;
+  }
+
+  .effect-day__img-day-total {
+    width: 684px;
+    min-height: 345px;
+
+    background-image: url("../img/24-hours-desktop.png");
+    background-repeat: no-repeat;
+  }
+
+  .effect-day__header {
+    line-height: 1;
+    margin-bottom: 27px;
+  }
+
+  .effect-day__info {
+    margin-top: -29px;
+    margin-left: 67px;
+
+    padding-right: 50px;
+  }
+
+  .effect-day__none-br {
+    display: none;
+  }
+
+  .effect-day_text,
+  .effect-day__link {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .effect-day_text {
+    margin-bottom: 41px;
+  }
+}
+
 // effect-day

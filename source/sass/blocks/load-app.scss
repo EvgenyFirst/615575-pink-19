@@ -123,4 +123,17 @@
   }
 }
 
+// ---------------------------
+
+@media (min-width: $desktop-width) {
+  .load-app {
+    margin-top: -426px;
+  }
+
+  .load-app__download-link {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
 // load-app
