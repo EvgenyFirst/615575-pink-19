@@ -12,7 +12,7 @@
   border: 2px solid $special-border-red-color; // временно
 }
 
-.users-pix__fkex {
+.users-pix__flex {
   margin-left: 20px;
   margin-right: 20px;
 
@@ -42,8 +42,9 @@
 .users-pix__top-day-bg {
   width: 140px;
 
-  position: absolute;
-  right: 20px;
+  position: relative;
+  top: -1px;
+  right: -158px;
 
   background-color: $crimson-color;
 
@@ -64,6 +65,10 @@
   text-align: center;
 }
 
+.users-pix__client {
+  margin-top: -36px;
+}
+
 .users-pix__img {
   display: block;
 }
@@ -76,6 +81,15 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.users-pix__name-flex {
+  display: flex;
+  align-items: center;
+}
+
+.users-pix__likes-mob-none {
+  display: none;
 }
 
 .users-pix__img-levon {
@@ -204,12 +218,326 @@
   }
 }
 
+.users-pix__likes-flex,
+.users-pix__likes-rev {
+  display: flex;
+}
+
 .users-pix__text,
 .users-pix__total {
   font-size: 12px;
   line-height: 1.714;
   text-transform: uppercase;
   color: $crimson-color;
+}
+
+// ---------------------------
+
+@media (min-width: $tablet-width) {
+  .users-pix {
+    margin-top: -285px;
+  }
+
+  .users-pix__description {
+    padding-left: 86px;
+    padding-right: 87px;
+  }
+
+  .users-pix__top-day-bg {
+    top: 56px;
+    right: -498px;
+  }
+
+  .users-pix__img-panoramic {
+    width: 100%;
+    min-height: 509px;
+
+    background-image: url("../img/panorama-tablet@1x.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-pix__name-flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .users-pix__main-flex-likes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .users-pix__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+
+    width: 620px;
+
+    margin-left: 20px;
+  }
+
+  .users-pix__content-width {
+    width: 50%;
+  }
+
+  .users-pix__content-add {
+    margin-bottom: 85px; // визуально margin-bottom: 0, по факту margin-bottom: 35px
+  }
+
+  .users-pix__img-levon,
+  .users-pix__img-anton,
+  .users-pix__img-boris,
+  .users-pix__img-sergey,
+  .users-pix__img-maxim,
+  .users-pix__img-nadezhda {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .users-pix__info-pix {
+    margin-left: 5px;
+    margin-right: 5px;
+
+    padding-bottom: 0;
+
+    min-height: 153px;
+  }
+
+  .users-pix__info-pix-margin {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .users-pix__img-levon {
+    min-height: 300px;
+
+    background-image: url("../img/photo-car-tablet@1x.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-pix__img-anton {
+    min-height: 300px;
+
+    background-image: url("../img/photo-drumset-tablet@1x.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-pix__img-boris {
+    min-height: 300px;
+
+    background-image: url("../img/photo-window-tablet@1x.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-pix__img-sergey {
+    min-height: 300px;
+
+    background-image: url("../img/photo-fair-tablet@1x.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-pix__img-maxim {
+    min-height: 300px;
+
+    background-image: url("../img/photo-pov-tablet@1x.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-pix__img-nadezhda {
+    min-height: 300px;
+
+    background-image: url("../img/photo-wing-tablet@1x.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-pix__main-h {
+    min-height: 84px;
+  }
+
+  .users-pix__main-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .users-pix__likes {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .users-pix__likes-rev {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .users-pix__likes-none {
+    display: none;
+  }
+
+  .users-pix__likes-mob-none {
+    display: block;
+  }
+
+  .users-pix__text-not-mob {
+    padding-right: 18px;
+  }
+}
+
+// ---------------------------
+
+@media (min-width: $desktop-width) {
+  .users-pix {
+    margin-top: -465px;
+    min-height: auto;
+  }
+
+  .users-pix__white-bg {
+    position: absolute;
+
+    width: 100vw;
+    height: 100%;
+
+    background-color: $white-color;
+
+    z-index: -1;
+
+    margin-left: -110px;
+  }
+
+  .users-pix__info-pix-margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .users-pix__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    width: auto;
+  }
+
+  .users-pix__content-width {
+    width: 300px;
+  }
+
+  .users-pix__description {
+    font-size: 18px;
+    line-height: 1.667;
+
+    margin-left: 80px;
+    margin-right: 60px;
+
+    padding-top: 93px;
+    padding-left: 103px;
+    padding-right: 123px;
+    padding-bottom: 90px;
+  }
+
+  .users-pix__top-day-bg {
+    right: -826px;
+  }
+
+  .users-pix__flex {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .users-pix__img-panoramic {
+    width: 100vw;
+    min-height: 506px;
+
+    margin-left: -112px;
+
+    background-image: url("../img/panorama-desktop@1x.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-pix__img-levon {
+    min-height: 400px;
+
+    background-image: url("../img/photo-car-desktop@1x.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-pix__img-anton {
+    min-height: 400px;
+
+    background-image: url("../img/photo-drumset-desktop@1x.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-pix__img-boris {
+    min-height: 400px;
+
+    background-image: url("../img/photo-window-desktop@1x.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-pix__img-sergey {
+    min-height: 400px;
+
+    background-image: url("../img/photo-fair-desktop@1x.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-pix__img-maxim {
+    min-height: 400px;
+
+    background-image: url("../img/photo-pov-desktop@1x.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-pix__img-nadezhda {
+    min-height: 400px;
+
+    background-image: url("../img/photo-wing-desktop@1x.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-pix__info-pix {
+    padding-top: 21px;
+    padding-left: 28px;
+    padding-right: 28px;
+
+    min-height: 91px;
+  }
 }
 
 // users-pix

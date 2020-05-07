@@ -1,8 +1,37 @@
 // container
 
 .container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.container__margin {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+// ---------------------------
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 660px;
+  }
+}
+
+// ---------------------------
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1200px;
+  }
+
+  .container__margin {
+    margin-left: 120px;
+    margin-right: 120px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 // container

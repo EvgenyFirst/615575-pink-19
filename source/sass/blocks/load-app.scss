@@ -93,4 +93,47 @@
   color: $white-color;
 }
 
+// ---------------------------
+
+@media (min-width: $tablet-width) {
+  .load-app {
+    width: 321px;
+
+    margin-top: -386px;
+    margin-left: 0;
+
+    background-color: transparent;
+  }
+
+  .load-app__container {
+    margin-top: 56px; // визуально padding-margin-top: 0, по факту margin-top: 18px
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .load-app__download-link {
+    padding-top: 13px;
+    padding-left: 64px;
+    padding-right: 62px;
+    padding-bottom: 15px;
+  }
+
+  .load-app__text {
+    font-size: 18px;
+  }
+}
+
+// ---------------------------
+
+@media (min-width: $desktop-width) {
+  .load-app {
+    margin-top: -426px;
+  }
+
+  .load-app__download-link {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
 // load-app
