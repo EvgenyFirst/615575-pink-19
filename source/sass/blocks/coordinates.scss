@@ -4,10 +4,12 @@
   display: flex;
   flex-direction: column;
 
+  height: 0;
+
   border: 2px solid $special-border-lite-green-color; // временно
 }
 
-.contacts__bg-top {
+.coordinates__bg-top {
   width: 1200px;
   min-height: 123px;
 
@@ -33,9 +35,76 @@
 
   z-index: -1;
 
-  background: url("../img/map.png");
+  background: url("../img/bg-map-mobile@1x.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.coordinates__img-map-marker {
+  background-image: url("../img/map-marker.png");
+  background-repeat: no-repeat;
+
+  position: relative;
+  width: 36px;
+  min-height: 35px;
+
+  right: -121px;
+  bottom: 105px;
+}
+
+// ---------------------------
+
+@media (min-width: $tablet-width) {
+  .coordinates {
+    height: 378px;
+  }
+
+  .coordinates__bg-top {
+    right: 293px;
+  }
+
+  .coordinates__img {
+    margin-top: -388px;
+
+    background: url("../img/bg-map-tablet@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .coordinates__img-map-marker {
+    right: -289px;
+    bottom: 141px;
+  }
+}
+
+// ---------------------------
+
+@media (min-width: $desktop-width) {
+  .coordinates {
+    min-height: 378px;
+    width: max-content;
+    display: flex;
+    margin-left: -112px;
+  }
+
+  .coordinates__bg-top {
+    right: 21px;
+
+    min-width: 1200px;
+  }
+
+  .coordinates__img {
+    margin-top: -479px;
+    min-height: 733px;
+
+    background: url("../img/bg-map-desktop@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .coordinates__img-map-marker {
+    right: -570px;
+    bottom: 173px;
+  }
+}
 // coordinates

@@ -4,7 +4,7 @@
   background: url("../img/grey-bg-standart.png");
   background-size: cover;
 
-  margin-top: -116px; // визуально margin-top: 0, по факту margin-top: -96px;
+  margin-top: -70px; // визуально margin-top: 0, по факту margin-top: -96px;
   margin-left: -20px;
   margin-right: -20px;
 
@@ -12,6 +12,10 @@
   z-index: 3;
 
   border: 2px solid $special-border-lite-green-color; // временно
+}
+
+.catalog__bg {
+  margin-top: -46px;
 }
 
 .catalog__lines {
@@ -199,6 +203,7 @@
   margin-bottom: 0;
 
   font-size: 24px;
+  font-weight: 400;
   line-height: 1.25;
   text-align: center;
   color: $white-color;
@@ -234,6 +239,122 @@
 
   background-image: url("../img/no.png");
   background-repeat: no-repeat;
+}
+
+.catalog__table {
+  display: none;
+}
+
+// ---------------------------
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    min-height: 497px;
+  }
+
+  .catalog__slider-toggles {
+    display: none;
+  }
+
+  .catalog__bg {
+    background-image: url("../img/grey-bg-sale-tablet.png");
+
+    min-width: 660px;
+    height: 375px;
+
+    margin-top: -92px;
+  }
+
+  .catalog__lines {
+    display: none;
+  }
+
+  .catalog__table {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 199px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .catalog__line-style {
+    background-color: $one-dark-blue-color;
+
+    min-width: 154px;
+  }
+
+  .catalog__info {
+    margin-top: -8px;
+    margin-left: -52px;
+    margin-right: 0;
+  }
+
+  .catalog__line-info-style {
+    background-color: $white-color;
+
+    td {
+      padding: 0;
+    }
+  }
+
+  .catalog__type-add {
+    margin-top: 6px;
+  }
+
+  .catalog__name-price {
+    font-size: 12px;
+    text-align: left;
+    text-transform: none;
+  }
+
+  .catalog__check-price-image,
+  .catalog__cross-price-image {
+    margin: auto;
+  }
+
+  .catalog__line-orders {
+    text-align: left;
+
+    padding-left: 14px;
+
+    &:last-child {
+      min-height: 44px;
+      margin-top: 0;
+    }
+  }
+}
+
+// ---------------------------
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    margin-left: -130px;
+    margin-right: -130px;
+  }
+
+  .catalog__table {
+    tr,
+    th {
+      min-width: 221px;
+      min-height: 59px;
+    }
+  }
+
+  .catalog__name-price {
+    font-size: 18px;
+    line-height: 1.667;
+  }
+
+  .catalog__line-orders {
+    padding-left: 24px;
+  }
+
+  .catalog__img {
+    top: -12px;
+    left: -50px;
+  }
 }
 
 // catalog

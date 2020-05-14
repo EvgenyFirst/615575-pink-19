@@ -34,6 +34,18 @@
   */
 }
 
+.general__button-style-form {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.667;
+  color: $white-color;
+
+  border: none;
+  border-radius: 3%;
+  background-color: $green-color;
+}
+
 // ---------------------------
 
 @media (min-width: $desktop-width) {

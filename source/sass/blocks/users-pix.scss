@@ -231,6 +231,11 @@
   color: $crimson-color;
 }
 
+.users-pix__main-flex {
+  display: flex;
+  align-items: center;
+}
+
 // ---------------------------
 
 @media (min-width: $tablet-width) {

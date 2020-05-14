@@ -19,4 +19,13 @@
   padding-bottom: 47px;
 }
 
+// ---------------------------
+
+@media (min-width: $tablet-width) {
+  .diamond__text {
+    font-size: 18px;
+    line-height: 1.667;
+  }
+}
+
 // diamond
