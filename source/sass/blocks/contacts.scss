@@ -73,4 +73,85 @@
   text-decoration: none;
 }
 
+// ---------------------------
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    margin-top: 45px; // визуально margin-top: 0, по факту margin-top: -10px;
+    width: 100%;
+  }
+
+  .contacts__header {
+    font-size: 40px;
+  }
+
+  .contacts__content {
+    margin-top: 61px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contacts__info {
+    width: 249px;
+
+    &:first-child {
+      padding-right: 100px;
+      padding-bottom: 55px;
+    }
+  }
+
+  .contacts__text {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: $one-dark-blue-color;
+  }
+}
+
+// ---------------------------
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    min-width: 1200px;
+
+    margin-left: -130px;
+
+    padding-top: 70px;
+    padding-bottom: 25px;
+  }
+
+  .contacts__wrapper {
+    margin: auto;
+    width: 100%;
+  }
+
+  .contacts__header {
+    font-size: 50px;
+  }
+
+  .contacts__info {
+    &:first-child {
+      order: -3;
+      padding-right: 100px;
+    }
+
+    &:nth-child(2) {
+      order: -1;
+    }
+
+    &:nth-child(3) {
+      order: -2;
+      padding-right: 50px;
+    }
+  }
+
+  .contacts__content {
+    padding-left: 0;
+  }
+}
+
 // contacts

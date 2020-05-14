@@ -6,7 +6,7 @@
   <title>HTML Academy: Пинк</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <meta name="viewport" content="initial-scale = 1, maximum-scale = 1, user-scalable = нуы, width = device-width">
+  <meta name="viewport" content="initial-scale = 1, maximum-scale = 1, user-scalable = yes, width = device-width">
 </head>
 
 <body class="general">
@@ -180,27 +180,27 @@
 
       <!-- Эффект на 24 часа! (начало) -->
       <section class="effect-day">
-        <h1 class="visually-hidden">
+        <h2 class="visually-hidden">
           Эффект на 24 часа! Узнать больше об исследовании британских ученых
-          </h2>
-          <span class="effect-day__grey-bg"></span>
-          <div class="effect-day__wrapper">
-            <span class="effect-day__img-day-total"></span>
-            <div class="effect-day__info">
-              <h2 class="effect-day__header">
-                Эффект<br class="effect-day__none-br"> на 24 часа!
-              </h2>
-              <p class="effect-day_text">
-                Британские ученые провели исследования
-                и доказали, что положительный эффект
-                от использования приложения длится
-                целые сутки!
-              </p>
-              <a href="#" class="effect-day__link">
-                Узнать больше об исследовании
-              </a>
-            </div>
+        </h2>
+        <span class="effect-day__grey-bg"></span>
+        <div class="effect-day__wrapper">
+          <span class="effect-day__img-day-total"></span>
+          <div class="effect-day__info">
+            <h2 class="effect-day__header">
+              Эффект<br class="effect-day__none-br"> на 24 часа!
+            </h2>
+            <p class="effect-day_text">
+              Британские ученые провели исследования
+              и доказали, что положительный эффект
+              от использования приложения длится
+              целые сутки!
+            </p>
+            <a href="#" class="effect-day__link">
+              Узнать больше об исследовании
+            </a>
           </div>
+        </div>
       </section>
       <!-- Эффект на 24 часа! (конец) -->
 
@@ -208,8 +208,15 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__wrapper slider">
-          <div class="reviews__list  slider__list">
+          <div class="reviews__list slider__list">
+            <div class="reviews__toggles-arrow slider__toggles-arrow">
+              <span tabindex="0" class="reviews__arrow-left"></span>
+              <span tabindex="0" class="reviews__arrow-right"></span>
+            </div>
             <blockquote class="reviews__item slider__item">
+              <p class="reviews__author-info">
+                25 лет, водитель трамвая
+              </p>
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило
@@ -217,8 +224,12 @@
                 А еще я познакомился со своей будущей женой в
                 комментариях к выложенной фотографии!»
               </p>
+              <span class="reviews__quotes-img"></span>
             </blockquote>
             <blockquote class="reviews__item slider__item">
+              <p class="reviews__author-info">
+                25 лет, водитель трамвая
+              </p>
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило
@@ -226,8 +237,12 @@
                 А еще я познакомился со своей будущей женой в
                 комментариях к выложенной фотографии!»
               </p>
+              <span class="reviews__quotes-img"></span>
             </blockquote>
             <blockquote class="reviews__item slider__item">
+              <p class="reviews__author-info">
+                25 лет, водитель трамвая
+              </p>
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило
@@ -235,6 +250,7 @@
                 А еще я познакомился со своей будущей женой в
                 комментариях к выложенной фотографии!»
               </p>
+              <span class="reviews__quotes-img"></span>
             </blockquote>
           </div>
           <p class="reviews__toggles slider__toggles">
@@ -250,163 +266,281 @@
       <section class="catalog">
         <h1 class="visually-hidden">Цены</h1>
 
-        <ul class="catalog__lines">
-          <li class="catalog__lines-hr">
-            <div class="catalog__lines-hr-vertical">
-              <span class="catalog__lines-hr-style catalog__lines-hr-left"></span>
-              <span class="catalog__lines-hr-style catalog__lines-hr-right"></span>
-            </div>
-            <div class="catalog__lines-hr-horizontal">
-              <span class="catalog__lines-hr-style catalog__lines-hr-one"></span>
-              <span class="catalog__lines-hr-style catalog__lines-hr-two"></span>
-              <span class="catalog__lines-hr-style catalog__lines-hr-three"></span>
-            </div>
-          </li>
-          <li class="catalog__line catalog__line-flex">
-            <div class="catalog__line-wrap">
-              <div class="catalog__info-center">
-                <p class="catalog__type">
-                  База
-                </p>
-                <div class="catalog__total-price">
-                  <p class="catalog__price-tag">
-                    1,99&nbsp;
+        <div class="catalog__bg">
+          <ul class="catalog__lines">
+            <li class="catalog__lines-hr">
+              <div class="catalog__lines-hr-vertical">
+                <span class="catalog__lines-hr-style catalog__lines-hr-left"></span>
+                <span class="catalog__lines-hr-style catalog__lines-hr-right"></span>
+              </div>
+              <div class="catalog__lines-hr-horizontal">
+                <span class="catalog__lines-hr-style catalog__lines-hr-one"></span>
+                <span class="catalog__lines-hr-style catalog__lines-hr-two"></span>
+                <span class="catalog__lines-hr-style catalog__lines-hr-three"></span>
+              </div>
+            </li>
+            <li class="catalog__line catalog__line-flex">
+              <div class="catalog__line-wrap">
+                <div class="catalog__info-center">
+                  <p class="catalog__type">
+                    База
                   </p>
-                  <p class="catalog__currency">
-                    USD
-                  </p>
+                  <div class="catalog__total-price">
+                    <p class="catalog__price-tag">
+                      1,99&nbsp;
+                    </p>
+                    <p class="catalog__currency">
+                      USD
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="catalog__line catalog__line-order">
-            <div class="catalog__line-orders">
-              <p class="catalog__name-price">
-                Розовый фильтр
-              </p>
-              <span class="catalog__check-price-image"></span>
-            </div>
-            <div class="catalog__line-orders">
-              <p class="catalog__name-price">
-                Смайлики
-              </p>
-              <span class="catalog__cross-price-image"></span>
-            </div>
-            <div class="catalog__line-orders">
-              <p class="catalog__name-price">
-                Комментарии
-              </p>
-              <span class="catalog__cross-price-image"></span>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li class="catalog__line catalog__line-order">
+              <div class="catalog__line-orders">
+                <p class="catalog__name-price">
+                  Розовый фильтр
+                </p>
+                <span class="catalog__check-price-image"></span>
+              </div>
+              <div class="catalog__line-orders">
+                <p class="catalog__name-price">
+                  Смайлики
+                </p>
+                <span class="catalog__cross-price-image"></span>
+              </div>
+              <div class="catalog__line-orders">
+                <p class="catalog__name-price">
+                  Комментарии
+                </p>
+                <span class="catalog__cross-price-image"></span>
+              </div>
+            </li>
+          </ul>
 
-        <ul class="catalog__lines">
-          <li class="catalog__lines-hr">
-            <div class="catalog__lines-hr-vertical">
-              <span class="catalog__lines-hr-style catalog__lines-hr-left"></span>
-              <span class="catalog__lines-hr-style catalog__lines-hr-right"></span>
-            </div>
-            <div class="catalog__lines-hr-horizontal">
-              <span class="catalog__lines-hr-style catalog__lines-hr-one"></span>
-              <span class="catalog__lines-hr-style catalog__lines-hr-two"></span>
-              <span class="catalog__lines-hr-style catalog__lines-hr-three"></span>
-            </div>
-          </li>
-          <li class="catalog__line catalog__line-flex">
-            <div class="catalog__line-wrap">
-              <span class="catalog__img">
-                <p class="catalog__text-top">
-                  Хит
-                </p>
-              </span>
-              <div class="catalog__info">
-                <p class="catalog__type">
-                  Стандарт
-                </p>
-                <div class="catalog__total-price">
-                  <p class="catalog__price-tag">
-                    3,99&nbsp;
-                  </p>
-                  <p class="catalog__currency">
-                    USD
+          <ul class="catalog__lines">
+            <li class="catalog__lines-hr">
+              <div class="catalog__lines-hr-vertical">
+                <span class="catalog__lines-hr-style catalog__lines-hr-left"></span>
+                <span class="catalog__lines-hr-style catalog__lines-hr-right"></span>
+              </div>
+              <div class="catalog__lines-hr-horizontal">
+                <span class="catalog__lines-hr-style catalog__lines-hr-one"></span>
+                <span class="catalog__lines-hr-style catalog__lines-hr-two"></span>
+                <span class="catalog__lines-hr-style catalog__lines-hr-three"></span>
+              </div>
+            </li>
+            <li class="catalog__line catalog__line-flex">
+              <div class="catalog__line-wrap">
+                <div class="catalog__img">
+                  <p class="catalog__text-top">
+                    Хит
                   </p>
                 </div>
+                <div class="catalog__info">
+                  <p class="catalog__type">
+                    Стандарт
+                  </p>
+                  <div class="catalog__total-price">
+                    <p class="catalog__price-tag">
+                      3,99&nbsp;
+                    </p>
+                    <p class="catalog__currency">
+                      USD
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="catalog__line catalog__line-order">
-            <div class="catalog__line-orders catalog__line-orders-flex">
-              <p class="catalog__name-price">
-                Розовый фильтр
-              </p>
-              <span class="catalog__check-price-image"></span>
-            </div>
-            <div class="catalog__line-orders">
-              <p class="catalog__name-price">
-                Смайлики
-              </p>
-              <span class="catalog__check-price-image"></span>
-            </div>
-            <div class="catalog__line-orders">
-              <p class="catalog__name-price">
-                Комментарии
-              </p>
-              <span class="catalog__cross-price-image"></span>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li class="catalog__line catalog__line-order">
+              <div class="catalog__line-orders catalog__line-orders-flex">
+                <p class="catalog__name-price">
+                  Розовый фильтр
+                </p>
+                <span class="catalog__check-price-image"></span>
+              </div>
+              <div class="catalog__line-orders">
+                <p class="catalog__name-price">
+                  Смайлики
+                </p>
+                <span class="catalog__check-price-image"></span>
+              </div>
+              <div class="catalog__line-orders">
+                <p class="catalog__name-price">
+                  Комментарии
+                </p>
+                <span class="catalog__cross-price-image"></span>
+              </div>
+            </li>
+          </ul>
 
-        <ul class="catalog__lines">
-          <li class="catalog__lines-hr">
-            <div class="catalog__lines-hr-vertical">
-              <span class="catalog__lines-hr-style catalog__lines-hr-left"></span>
-              <span class="catalog__lines-hr-style catalog__lines-hr-right"></span>
-            </div>
-            <div class="catalog__lines-hr-horizontal">
-              <span class="catalog__lines-hr-style catalog__lines-hr-one"></span>
-              <span class="catalog__lines-hr-style catalog__lines-hr-two"></span>
-              <span class="catalog__lines-hr-style catalog__lines-hr-three"></span>
-            </div>
-          </li>
-          <li class="catalog__line catalog__line-flex">
-            <div class="catalog__line-wrap">
-              <div class="catalog__info-cente">
-                <p class="catalog__type">
-                  Анлим
-                </p>
-                <div class="catalog__total-price">
-                  <p class="catalog__price-tag">
-                    9,99&nbsp;
+          <ul class="catalog__lines">
+            <li class="catalog__lines-hr">
+              <div class="catalog__lines-hr-vertical">
+                <span class="catalog__lines-hr-style catalog__lines-hr-left"></span>
+                <span class="catalog__lines-hr-style catalog__lines-hr-right"></span>
+              </div>
+              <div class="catalog__lines-hr-horizontal">
+                <span class="catalog__lines-hr-style catalog__lines-hr-one"></span>
+                <span class="catalog__lines-hr-style catalog__lines-hr-two"></span>
+                <span class="catalog__lines-hr-style catalog__lines-hr-three"></span>
+              </div>
+            </li>
+            <li class="catalog__line catalog__line-flex">
+              <div class="catalog__line-wrap">
+                <div class="catalog__info-center">
+                  <p class="catalog__type">
+                    Анлим
                   </p>
-                  <p class="catalog__currency">
-                    USD
-                  </p>
+                  <div class="catalog__total-price">
+                    <p class="catalog__price-tag">
+                      9,99&nbsp;
+                    </p>
+                    <p class="catalog__currency">
+                      USD
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="catalog__line catalog__line-order">
-            <div class="catalog__line-orders">
-              <p class="catalog__name-price">
-                Розовый фильтр
-              </p>
-              <span class="catalog__check-price-image"></span>
-            </div>
-            <div class="catalog__line-orders">
-              <p class="catalog__name-price">
-                Смайлики
-              </p>
-              <span class="catalog__check-price-image"></span>
-            </div>
-            <div class="catalog__line-orders">
-              <p class="catalog__name-price">
-                Комментарии
-              </p>
-              <span class="catalog__check-price-image"></span>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li class="catalog__line catalog__line-order">
+              <div class="catalog__line-orders">
+                <p class="catalog__name-price">
+                  Розовый фильтр
+                </p>
+                <span class="catalog__check-price-image"></span>
+              </div>
+              <div class="catalog__line-orders">
+                <p class="catalog__name-price">
+                  Смайлики
+                </p>
+                <span class="catalog__check-price-image"></span>
+              </div>
+              <div class="catalog__line-orders">
+                <p class="catalog__name-price">
+                  Комментарии
+                </p>
+                <span class="catalog__check-price-image"></span>
+              </div>
+            </li>
+          </ul>
+
+          <table class="catalog__table">
+            <tr>
+              <th></th>
+              <th class="catalog__line-style">
+                <div class="catalog__line-wrap">
+                  <div class="catalog__info-center">
+                    <p class="catalog__type">
+                      База
+                    </p>
+                    <div class="catalog__total-price">
+                      <p class="catalog__price-tag">
+                        1,99&nbsp;
+                      </p>
+                      <p class="catalog__currency">
+                        USD
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </th>
+              <th class="catalog__line-style">
+                <div class="catalog__line-wrap">
+                  <div class="catalog__img">
+                    <p class="catalog__text-top">
+                      Хит
+                    </p>
+                  </div>
+                  <div class="catalog__info">
+                    <p class="catalog__type catalog__type-add">
+                      Стандарт
+                    </p>
+                    <div class="catalog__total-price">
+                      <p class="catalog__price-tag">
+                        3,99&nbsp;
+                      </p>
+                      <p class="catalog__currency">
+                        USD
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </th>
+              <th class="catalog__line-style">
+                <div class="catalog__line-wrap">
+                  <div class="catalog__info-center">
+                    <p class="catalog__type">
+                      Анлим
+                    </p>
+                    <div class="catalog__total-price">
+                      <p class="catalog__price-tag">
+                        9,99&nbsp;
+                      </p>
+                      <p class="catalog__currency">
+                        USD
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </th>
+            </tr>
+            <tr class="catalog__line-info-style">
+              <td>
+                <div class="catalog__line-orders">
+                  <p class="catalog__name-price">
+                    Розовый фильтр
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div class="catalog__check-price-image"></div>
+              </td>
+              <td>
+                <div class="catalog__check-price-image"></div>
+              </td>
+              <td>
+                <div class="catalog__check-price-image"></div>
+              </td>
+            </tr>
+            <tr class="catalog__line-info-style">
+              <td>
+                <div class="catalog__line-orders">
+                  <p class="catalog__name-price">
+                    Смайлики
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div class="catalog__cross-price-image"></div>
+              </td>
+              <td>
+                <div class="catalog__check-price-image"></div>
+              </td>
+              <td>
+                <div class="catalog__check-price-image"></div>
+              </td>
+            </tr>
+            <tr class="catalog__line-info-style">
+              <td>
+                <div class="catalog__line-orders">
+                  <p class="catalog__name-price">
+                    Комментарии
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div class="catalog__cross-price-image"></div>
+              </td>
+              <td>
+                <div class="catalog__cross-price-image"></div>
+              </td>
+              <td>
+                <div class="catalog__check-price-image"></div>
+              </td>
+            </tr>
+          </table>
+        </div>
         <p class="catalog__slider-toggles">
           <button class="catalog__toggles-toggle" type="button">1</button>
           <button class="catalog__toggles-toggle  catalog__toggles-toggle-active" type="button">2</button>
@@ -453,8 +587,9 @@
       <!-- Местоположение (начало) -->
       <section class="coordinates">
         <h1 class="visually-hidden">Местоположение</h1>
-        <span class="contacts__bg-top"></span>
+        <span class="coordinates__bg-top"></span>
         <span class="coordinates__img"></span>
+        <span class="coordinates__img-map-marker"></span>
       </section>
       <!-- Местоположение (конец) -->
 

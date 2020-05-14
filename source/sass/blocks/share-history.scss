@@ -159,6 +159,10 @@
   padding-right: 35px;
 }
 
+.share-history__adventure-header-x {
+  display: none;
+}
+
 .share-history__adventure-info {
   list-style: none;
 
@@ -224,18 +228,9 @@
   margin-right: -20px;
 
   padding-top: 25px;
-  padding-left: 45px;
-  padding-right: 46px;
+  padding-left: 49px;
+  padding-right: 49px;
   padding-bottom: 25px;
-
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.667;
-  color: $white-color;
-
-  border: none;
-  background-color: $green-color;
 }
 
 .share-history__required {
@@ -251,6 +246,14 @@
 
 .share-history__required-span {
   color: $crimson-color;
+}
+
+.share-history__option-flex {
+  list-style: none;
+
+  margin: 0;
+
+  padding-left: 0;
 }
 
 // ---------------------------
@@ -274,6 +277,226 @@
 
     margin-left: -23px;
   }
+
+  .share-history__header {
+    font-size: 18px;
+    line-height: 1.667;
+
+    margin-top: 95px;
+    margin-left: 43px;
+    margin-right: 66px;
+    margin-bottom: 75px;
+  }
+
+  .share-history__form {
+    fieldset {
+      &:first-child {
+        order: -5;
+      }
+
+      &:nth-child(3) {
+        order: -3;
+      }
+
+      &:nth-child(4) {
+        order: -4;
+      }
+    }
+  }
+
+  .share-history__adventure,
+  .share-history__crazy-achievements-in-travel {
+    margin-left: 0;
+    margin-right: -20px;
+  }
+
+  .share-history__info {
+    min-width: 615px;
+  }
+
+  .share-history__style-header {
+    margin-top: 19px;
+
+    padding-left: 0;
+    padding-right: 21px;
+  }
+
+  .share-history__option-text {
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .share-history__adventure {
+    margin-top: 27px; // визуально margin-top: 0, по факту margin-top: -28px;
+
+    padding: 0;
+  }
+
+  .share-history__adventure-header {
+    padding-top: 0;
+    padding-left: 23px;
+    padding-right: 24px;
+  }
+
+  .share-history__adventure-header-x {
+    display: block;
+  }
+
+  .share-history__style-block {
+    border: 2px solid $two-lite-grey-color;
+    background-color: transparent;
+  }
+
+  .share-history__adventure-info {
+    margin-top: 52px;
+    margin-left: -13px;
+    margin-bottom: 54px;
+
+    padding-left: 65px;
+  }
+
+  .share-history__contact-data {
+    margin-top: 62px;
+    margin-left: 0;
+
+    padding-right: 4px;
+  }
+
+  .share-history__option-contacts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+    width: 76%;
+
+    margin-left: 45px;
+    margin-right: 0;
+  }
+
+  .share-history__phone-number,
+  .share-history__e-mail {
+    padding-left: 33px;
+
+    &::before {
+      content: "";
+      display: block;
+
+      width: 73px;
+      height: 73px;
+
+      position: absolute;
+
+      right: 46px;
+
+      background-color: $two-lite-grey-color;
+    }
+  }
+
+  .share-history__phone-number {
+    &::before {
+      background-image: url("../img/phone.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 59px;
+    }
+  }
+
+  .share-history__e-mail {
+    &::before {
+      background-image: url("../img/mail.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      bottom: 72px;
+    }
+  }
+
+  .share-history__crazy-achievements-in-travel {
+    position: relative;
+    top: 33px;
+
+    margin-bottom: 80px;
+  }
+
+  .share-history__header-adv {
+    position: relative;
+    top: -58px;
+
+    margin-right: 0;
+
+    padding-left: 30px;
+    padding-right: 25px;
+  }
+
+  .share-history__crazy-achievement {
+    margin-top: -100px;
+    margin-bottom: 45px;
+
+    padding-left: 36px;
+  }
+
+  .share-history__description-emotion {
+    padding-top: 0;
+    padding-left: 38px;
+    padding-right: 40px;
+
+    background-color: $white-color;
+
+    z-index: 1;
+
+    width: 184px;
+  }
+
+  .share-history__option-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 2px solid $two-lite-grey-color;
+    width: 100%;
+  }
+
+  .share-history__description-emotion-input {
+    width: 495px;
+
+    margin-top: 7px; // визуально margin-top: 0, по факту margin-top: -33px;
+
+    padding-top: 23px;
+    padding-left: 20px;
+    padding-right: 26px;
+    padding-bottom: 150px;
+  }
+
+  .share-history__description-info {
+    min-width: 616px;
+
+    padding-bottom: 50px;
+
+    border-top: none;
+    border-left: 2px solid $two-lite-grey-color;
+    border-right: 2px solid $two-lite-grey-color;
+    border-bottom: 2px solid $two-lite-grey-color;
+  }
+
+  .share-history__btn-txt {
+    display: flex;
+    justify-content: space-between;
+
+    min-width: 620px;
+  }
+
+  .share-history__required {
+    padding-top: 27px;
+  }
+
+  .share-history__send-form {
+    padding-top: 25px;
+    padding-left: 66px;
+    padding-right: 58px;
+    padding-bottom: 25px;
+  }
 }
 
 // ---------------------------
@@ -283,9 +506,139 @@
     margin-top: -465px;
   }
 
+  .share-history__option-description {
+    border-top: none;
+  }
+
   .share-history__white-bg {
     margin-left: -130px;
     height: 100%;
+  }
+
+  .share-history__description {
+    min-width: 930px;
+    border: 2px solid $two-lite-grey-color;
+
+    margin-left: 0;
+  }
+
+  .share-history__description-info {
+    border: none;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .share-history__description-emotion-input {
+    width: 620px;
+
+    margin-top: 7px;
+
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 85px;
+  }
+
+  .share-history__description-emotion {
+    position: relative;
+    top: -35px;
+  }
+
+  .share-history__required {
+    margin-right: -21px;
+  }
+
+  .share-history__crazy-achievement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .share-history__option-crazy-achievement {
+    width: 260px;
+  }
+
+  .share-history__option-flex {
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 56px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .share-history__contacts {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .share-history__info-input {
+    max-width: 310px;
+  }
+
+  .share-history__e-mail-input {
+    position: relative;
+    top: 1px;
+  }
+
+  .share-history__phone-number {
+    &::before {
+      left: 362px;
+    }
+  }
+
+  .share-history__e-mail {
+    padding-bottom: 26px;
+
+    &::before {
+      top: 60px;
+      left: 833px;
+    }
+  }
+
+  .share-history__option-text {
+    &:nth-child(2) {
+      .share-history__info-input {
+        padding-right: 41px;
+      }
+    }
+  }
+
+  .share-history__adventure {
+    max-width: 433px;
+
+    padding-top: 20px;
+
+    position: relative;
+    top: -361px;
+    right: -498px;
+  }
+
+  .share-history__contact-data {
+    margin-top: -265px;
+  }
+
+  .share-history__option-contacts {
+    &:first-child {
+      margin-left: 30px;
+    }
+
+    &:last-child {
+      margin-right: -15px;
+    }
+  }
+
+  .share-history__header {
+    margin-top: 120px;
+    margin-left: 65px;
+    margin-right: 66px;
+    margin-bottom: 70px;
+  }
+
+  .share-history__style-header {
+    font-size: 14px;
   }
 }
 

@@ -1,0 +1,157 @@
+// modal-window
+
+.modal-window__hidden {
+  // по умолчнию класс скрывает модальные окно с отправленной заявкой и\или с ошибкой
+  display: none;
+}
+
+.modal-window__error {
+  position: fixed;
+  bottom: 299px;
+
+  background-color: $white-color;
+
+  z-index: 5;
+
+  border: 2px solid $special-border-red-color; // временно
+}
+
+.modal-window__error-add {
+  padding-bottom: 40px;
+}
+
+.modal-window__success {
+  position: fixed;
+  bottom: 299px;
+
+  background-color: $white-color;
+
+  z-index: 5;
+
+  border: 2px solid $special-border-lite-green-color;
+}
+
+.modal-window__error,
+.modal-window__success {
+  margin-left: -20px;
+
+  width: 320px;
+
+  box-shadow: 5px 5px 15px 5px rgba($black-color, 0.15);
+}
+
+.modal-window__container {
+  padding-top: 45px;
+  padding-left: 7px;
+  padding-right: 8px;
+  padding-bottom: 38px;
+}
+
+.modal-window__header {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.333;
+  color: $black-color;
+}
+
+.modal-window__info {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.333;
+  color: $one-dark-blue-color;
+}
+
+.modal-window__send-form {
+  background-color: $lite-white-color;
+  min-height: 162px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 320px;
+}
+
+.modal-window__txt-btn {
+  text-align: center;
+
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.modal-window__txt-close {
+  width: 100%;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.modal-window__txt-ok {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+// ---------------------------
+
+@media (min-width: $tablet-width) {
+  .modal-window__error,
+  .modal-window__success {
+    width: 460px;
+
+    margin: auto 12%;
+  }
+
+  .modal-window__header {
+    font-size: 30px;
+  }
+
+  .modal-window__header-error {
+    padding-left: 59px;
+    padding-right: 59px;
+  }
+
+  .modal-window__info {
+    font-size: 18px;
+  }
+
+  .modal-window__container {
+    padding-top: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 35px;
+  }
+
+  .modal-window__txt-btn {
+    margin-left: 70px;
+    margin-right: 70px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+// ---------------------------
+
+@media (min-width: $desktop-width) {
+  .modal-window__error,
+  .modal-window__success {
+    width: 762px;
+
+    margin: auto 7%;
+  }
+
+  .modal-window__container {
+    padding-left: 192px;
+    padding-right: 192px;
+    padding-bottom: 30px;
+  }
+
+  .modal-window__header-error {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// modal-window
